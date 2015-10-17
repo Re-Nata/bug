@@ -16,6 +16,7 @@ body {
     margin: 0 auto;
 }
 
+/* HEADER ======================================================================================== */
 
 .header {
     width: inherit;
@@ -142,7 +143,9 @@ body {
 .icon-menu li:hover p {
     color: #088CFF;
     
-}
+} */
+
+/* END OF HEADER ============================================================================== */
 
 /* ATRISTS PAGE =============================================================================== */
 
@@ -266,9 +269,7 @@ body {
     line-height: 16px;
     color: #535865;
     width: 90%;
-   
 }
-
 
 .artist-block h3 {
     font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
@@ -283,6 +284,7 @@ body {
 .artist-block h3 a {
         text-decoration: none;
 }
+
 .artist-block h3 a:visited {
     color: inherit;
 }
@@ -343,7 +345,7 @@ top: 40%;
 left:2%;
 }
 
-.artist-3{
+.artist-3 {
 	position: absolute;
 	top: 20%;
 	left: 40%
@@ -354,32 +356,32 @@ left:2%;
 	top: 10%;
 	right: 10%;
 }
-.artist-5{
+.artist-5 {
 	position: absolute;
 	bottom: 20%;
 	left: 80%;
 }
-.artist-6{
+.artist-6 {
 	position: absolute;
 	bottom: 30%;
 	left: 35%;
 }
-.artist-7{
+.artist-7 {
 	position: absolute;
 	bottom: 20%;
 	left: 18%;
 }
-.artist-8{
+.artist-8 {
 	position: absolute;
 	bottom: 25%;
 	left: 50%;
 }
-.artist-9{
+.artist-9 {
 	position: absolute;
 	bottom: 40%;
 	right: 15%;
 }
-.artist-10{
+.artist-10 {
 	position: absolute;
 	bottom: 40%;
 	left: 90%;
@@ -413,15 +415,17 @@ footer {
 	position: relative;
 }
 
-#footer a{
+#footer a {
   color:#C1c5cd;
 }
+
 #footer-logo {
 	float: left;
 	margin-top: -10px;
 	font-size: 10px;
 	text-align: left;
-	}
+}
+
 #sitemap {
 	position: absolute;
 	left: 25%;
@@ -429,6 +433,7 @@ footer {
     display: inline-block;
 	overflow: hidden;
 }
+
 #sitemap a {
 	text-decoration: none;
 	font-size: 12px;
@@ -455,15 +460,18 @@ footer {
   border-radius: 50%;
   margin-right: 1px;
  }
-.vkontakte{
+ 
+.vkontakte {
 background: #7A6B67 url(PNG/vk2-icon.png)center center no-repeat;
  background-size: 16px 10px;	
 } 
+
 .vkontakte:hover {
   background: #6996C7 url(PNG/vk2-icon.png)center center no-repeat;
   background-size: 16px 10px;
  }
- .facebook{
+ 
+ .facebook {
 background: #7A6B67 url(PNG/fb2-icon.png)center center no-repeat;
  background-size: 8px 16px;	
 } 
@@ -471,30 +479,37 @@ background: #7A6B67 url(PNG/fb2-icon.png)center center no-repeat;
   background: #496194 url(PNG/fb2-icon.png)center center no-repeat;
   background-size: 8px 16px;
 }
- .twitter{
+
+ .twitter {
 background: #7A6B67 url(PNG/twitter.png)center center no-repeat;
 } 
+
 .twitter:hover {
   background: #28C3FF url(PNG/twitter.png)center center no-repeat;
  }
-  .odnoklassniki{
+ 
+  .odnoklassniki {
 background: #7A6B67 url(PNG/ok.png)center center no-repeat;
 } 
+
 .odnoklassniki:hover {
   background: #ED812B url(PNG/ok.png)center center no-repeat;
  }
- .designed-by{
+ 
+ .designed-by {
     float: right;
 	margin-top: -10px;
 	font-size: 10px;
 	text-align: left;
 	margin-right: -120px;
  }
- .traineeship{
+ 
+ .traineeship {
 	 background: url(png/traineeship logo normal.png)center center no-repeat;
 	 background-size: 170px 40px;
  }
- .traineeship:hover{
+ 
+ .traineeship:hover {
 	 background: url(png/traineeship logo hover.png)center center no-repeat;
 	 background-size: 170px 40px;
 
