@@ -497,6 +497,7 @@ background: #7A6B67 url(PNG/ok.png)center center no-repeat;
  .traineeship:hover{
 	 background: url(png/traineeship logo hover.png)center center no-repeat;
 	 background-size: 170px 40px;
+
  }
 
  /* HOMEPAGE-SLIDER-CURRENTPROJECT =============================================================================== */
@@ -735,5 +736,4 @@ a, .see-all {
     text-transform: uppercase;
     line-height: 1.2rem;
 }
-
 
