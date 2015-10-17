@@ -16,14 +16,17 @@ body {
   inset 0 0 20px rgba(0,0,0,.1);
 }
 .button:hover {
-  background: rgba(10,116,208,208);
+  background: rgba(10,116,208,208) url(SVG/005__plus.svg)center center no-repeat;
+  background-size: 65px 65px;
   box-shadow: inset 0 0 20px rgba(0,0,0,.2),
   0 2px 0 rgba(255,255,255,.4),
   inset 0 2px 0 rgba(0,0,0,.1);
 }
 .btn-plus{
-  background:url(png/005__plus.png) center center no-repeat;
-  }
+  display: block;
+  background: rgba(0,153,255,204)url(SVG/005__plus.svg)center center no-repeat;
+  background-size: 65px 65px;
+    }
  .will-go{
    display: inline-block;
    margin: 10px;
@@ -45,8 +48,8 @@ body {
   margin: 10px;
   width: 47px;
   height: 47px;
-  background: rgba(0,153,255,204);
-  background:url(png/074__coordinates.png) center center no-repeat;
+  background: rgba(111,117,136,226) url(SVG/074__coordinates.svg) center center no-repeat;
+  background-size: 65px 65px;
   cursor: pointer;
   border-radius: 50%;
     box-shadow: 0 3px 20px rgba(0,0,0,.25),
@@ -55,7 +58,8 @@ body {
   inset 0 0 20px rgba(0,0,0,.1);
    }
    .coordinates:hover {
-  background: rgba(10,116,208,208);
+  background: rgba(10,116,208,208)url(SVG/074__coordinates.svg) center center no-repeat;
+  background-size: 65px 65px;
   box-shadow: inset 0 0 20px rgba(0,0,0,.2),
   0 2px 0 rgba(255,255,255,.4),
   inset 0 2px 0 rgba(0,0,0,.1);
