@@ -293,7 +293,7 @@ body {
 
 .artist-block h3 span:hover,
 .artist-block h3 span:focus {
-    color: #0a74d0;
+    color: #0A74D0;
 }
 
 
@@ -329,7 +329,7 @@ figure figcaption {
 	font-weight: 300;
 	text-align: center;
 	color: #C1C5CD;
-	font-family: 'Roboto-Condensed'
+	font-family: 'Roboto Condensed'
 }
 
 .artist-1 {
@@ -501,14 +501,6 @@ background: #7A6B67 url(PNG/ok.png)center center no-repeat;
  }
 
  /* HOMEPAGE-SLIDER-CURRENTPROJECT =============================================================================== */
- * {
-    box-sizing: border-box;
-}
-
-
-body {
-background-color: #fff;
-}
 
 .slider {
     position: relative;
