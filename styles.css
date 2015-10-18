@@ -275,13 +275,13 @@ body {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase; 
-    color: #535865;
     cursor: default;
 }
 
 .artist-block h3 a {
         text-decoration: none;
         font-size: 12px;
+        color: #535865;
 }
 
 .artist-block h3 a:visited {
