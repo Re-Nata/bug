@@ -731,7 +731,7 @@ p {
     right: 4px;
 }
 
-a, .see-all {
+/*a*/, .see-all {
     text-decoration: none;
     margin-left: 424px;
     color: #ced1d8;
