@@ -730,13 +730,12 @@ p {
     bottom: -4px;
     right: 4px;
 }
-
-a, .see-all {
+/*a*/, .see-all {
     text-decoration: none;
-    /* margin-left: 424px; */
+    margin-left: 424px;
     color: #ced1d8;
     margin-top: 59px;
-    /* font-size: 1rem; */
+    font-size: 1rem;
     font-family: Roboto Condensed;
     font-weight: bold;
     text-transform: uppercase;
