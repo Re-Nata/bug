@@ -8,7 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
 body {
     width: 100%;
     height: auto;
@@ -16,6 +19,10 @@ body {
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
+=======
+/* HEADER ======================================================================================== */
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
 
 .header {
     width: inherit;
@@ -88,7 +95,11 @@ body {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 /* Menu items with icons =========================== */
+=======
+/* Menu items with icons =========================== 
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
 .icon-menu {
     position: absolute;
     margin: 0;
@@ -142,7 +153,13 @@ body {
 .icon-menu li:hover p {
     color: #088CFF;
     
+<<<<<<< HEAD
 }
+=======
+} */
+
+/* END OF HEADER ============================================================================== */
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
 
 /* ATRISTS PAGE =============================================================================== */
 
@@ -266,6 +283,7 @@ body {
     line-height: 16px;
     color: #535865;
     width: 90%;
+<<<<<<< HEAD
    
 }
 
@@ -277,12 +295,28 @@ body {
     text-align: center;
     text-transform: uppercase; 
     color: #535865;
+=======
+}
+
+.artist-block h3 {
+    font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; 
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
     cursor: default;
 }
 
 .artist-block h3 a {
         text-decoration: none;
+<<<<<<< HEAD
 }
+=======
+        font-size: 12px;
+        color: #535865;
+}
+
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
 .artist-block h3 a:visited {
     color: inherit;
 }
@@ -293,7 +327,11 @@ body {
 
 .artist-block h3 span:hover,
 .artist-block h3 span:focus {
+<<<<<<< HEAD
     color: #0a74d0;
+=======
+    color: #0A74D0;
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
 }
 
 
@@ -301,11 +339,20 @@ body {
 
 /* HOME PAGE =============================================================================================== */
 .wrapper {
+<<<<<<< HEAD
   margin:auto;
   background: rgba(244,244,246,96);
   width: 1280px;
   height: 100%
   }
+=======
+ height: 100%;
+  margin:auto;
+  background: rgba(244,244,246,96);
+  width: 1280px;
+  height: 630px;
+ }
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
  
 
 h1 {
@@ -328,6 +375,7 @@ figure figcaption {
 	font-weight: 300;
 	text-align: center;
 	color: #C1C5CD;
+<<<<<<< HEAD
 	font-family: 'Roboto-Condensed'
 }
 .artist-1 {
@@ -382,6 +430,64 @@ figure figcaption {
 	bottom: 40%;
 	left: 90%;
 }
+=======
+	font-family: 'Roboto Condensed'
+}
+
+.artist-1 {
+	position: absolute;
+	top: 7%;
+	left: 20%;
+}
+.artist-2 {
+position: absolute;
+top: 40%;
+left:2%;
+}
+
+.artist-3 {
+	position: absolute;
+	top: 20%;
+	left: 40%
+}
+
+.artist-4 {
+	position: absolute;
+	top: 10%;
+	right: 10%;
+}
+.artist-5 {
+	position: absolute;
+	bottom: 20%;
+	left: 80%;
+}
+.artist-6 {
+	position: absolute;
+	bottom: 30%;
+	left: 35%;
+}
+.artist-7 {
+	position: absolute;
+	bottom: 20%;
+	left: 18%;
+}
+.artist-8 {
+	position: absolute;
+	bottom: 25%;
+	left: 50%;
+}
+.artist-9 {
+	position: absolute;
+	bottom: 40%;
+	right: 15%;
+}
+.artist-10 {
+	position: absolute;
+	bottom: 40%;
+	left: 90%;
+}
+
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
 figure img {
 	border-radius: 50%;
 	border: 2px #FFFFFF solid;
@@ -389,6 +495,7 @@ figure img {
     -moz-box-shadow:    1px 1px 4px 0px rgba(111, 117, 136, 0.51);
     box-shadow:         1px 1px 4px 0px rgba(111, 117, 136, 0.51);
 }
+<<<<<<< HEAD
 .all-artists{
     position:absolute;
     bottom:10%;
@@ -409,20 +516,45 @@ footer {
 	max-width: inherit;
     clear: both;
     float:left;
+=======
+
+.content {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 90px;
+  background: rgba(244,244,246,96);
+}
+footer {
+	background: #fff;
+	
+	font-size: 11px;
+}
+
+#footer {
+	max-width: 1280px;
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
 	margin: auto;
 	padding: 10px 0;
 	height: 90px;
 	position: relative;
 }
 
+<<<<<<< HEAD
 #footer a{
   color:#C1c5cd;
 }
+=======
+#footer a {
+  color:#C1c5cd;
+}
+
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
 #footer-logo {
 	float: left;
 	margin-top: -10px;
 	font-size: 10px;
 	text-align: left;
+<<<<<<< HEAD
 	}
 #sitemap {
 	position: absolute;
@@ -431,6 +563,18 @@ footer {
     display: inline-block;
 	overflow: hidden;
 }
+=======
+}
+
+#sitemap {
+	position: absolute;
+	left: 25%;
+	width: 100%;
+    display: inline-block;
+	overflow: hidden;
+}
+
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
 #sitemap a {
 	text-decoration: none;
 	font-size: 12px;
@@ -457,15 +601,29 @@ footer {
   border-radius: 50%;
   margin-right: 1px;
  }
+<<<<<<< HEAD
 .vkontakte{
 background: #7A6B67 url(PNG/vk2-icon.png)center center no-repeat;
  background-size: 16px 10px;	
 } 
+=======
+ 
+.vkontakte {
+background: #7A6B67 url(PNG/vk2-icon.png)center center no-repeat;
+ background-size: 16px 10px;	
+} 
+
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
 .vkontakte:hover {
   background: #6996C7 url(PNG/vk2-icon.png)center center no-repeat;
   background-size: 16px 10px;
  }
+<<<<<<< HEAD
  .facebook{
+=======
+ 
+ .facebook {
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
 background: #7A6B67 url(PNG/fb2-icon.png)center center no-repeat;
  background-size: 8px 16px;	
 } 
@@ -473,6 +631,7 @@ background: #7A6B67 url(PNG/fb2-icon.png)center center no-repeat;
   background: #496194 url(PNG/fb2-icon.png)center center no-repeat;
   background-size: 8px 16px;
 }
+<<<<<<< HEAD
  .twitter{
 background: #7A6B67 url(PNG/twitter.png)center center no-repeat;
 } 
@@ -559,3 +718,269 @@ background: #7A6B67 url(PNG/ok.png)center center no-repeat;
 	height: 30px;  }
 
  
+=======
+
+ .twitter {
+background: #7A6B67 url(PNG/twitter.png)center center no-repeat;
+} 
+
+.twitter:hover {
+  background: #28C3FF url(PNG/twitter.png)center center no-repeat;
+ }
+ 
+  .odnoklassniki {
+background: #7A6B67 url(PNG/ok.png)center center no-repeat;
+} 
+
+.odnoklassniki:hover {
+  background: #ED812B url(PNG/ok.png)center center no-repeat;
+ }
+ 
+ .designed-by {
+    float: right;
+	margin-top: -10px;
+	font-size: 10px;
+	text-align: left;
+	margin-right: -120px;
+ }
+ 
+ .traineeship {
+	 background: url(png/traineeship logo normal.png)center center no-repeat;
+	 background-size: 170px 40px;
+ }
+ 
+ .traineeship:hover {
+	 background: url(png/traineeship logo hover.png)center center no-repeat;
+	 background-size: 170px 40px;
+
+ }
+
+ /* HOMEPAGE-SLIDER-CURRENTPROJECT =============================================================================== */
+
+.slider {
+    position: relative;
+    height: 500px;
+}
+
+
+.arrow_right {
+    opacity: 0.5;
+    position: absolute;
+    top: 44%;
+    right: 20px;
+}
+
+.arrow_right:hover {
+    opacity: 1;
+}
+
+
+.arrow_left{
+    opacity: 0.5;
+    position: absolute;
+    top: 44%;
+    left: 20px;
+}
+
+.arrow_left:hover {
+    opacity: 1;
+}
+
+
+.title-makvin h1 {
+    position: absolute;
+    color: #fff;
+    top: 14%;
+    font-size: 2.5rem;
+    font-family: Roboto Condensed;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.title-description h2 {
+    position: absolute;
+    color: #fff;
+    top: 38%;
+    font-size: 1.5rem;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    line-height: 2rem;
+}
+
+button {
+    position: absolute;
+    margin-left: 44%;
+    margin-top: 27%;
+    display: block;
+    border-radius: 2px;
+    width: 160px;
+    height: 45px;
+    border: 0px;
+    background-color: #088cff;
+    color: #fff;
+    font-family: Roboto Condensed;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+background-color: #0a74d0;
+}
+ 
+.labels {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    right: 46%;
+    bottom: 30px;
+}
+
+.labels label {
+    margin: 4px;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+
+}
+
+.slide-buttons{
+    display: none;
+}
+
+.checked {
+    background-color: #fff;
+}
+
+.img-porch {
+    margin-left: 180px;
+    margin-bottom: 50px;
+    float: left;
+}
+
+
+.current-project-title {
+    color: #a9aebb;
+    margin-left: 180px;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+}
+
+.current-project .porch-title {
+    margin-left: 600px; 
+    color: #535865;
+    font-size: 1.2rem;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+}
+
+p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.current-project-text {
+    color: #a9aebb;
+    margin-left: 600px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: Open Sans;
+    font-weight: 400;
+    margin-right: 180px;
+    line-height: 1.2rem;
+}
+
+.pin-text {
+    color: #a9aebb;
+    margin-top: 5px;
+    margin-left: 600px;
+    font-size: 0.8rem;
+    font-family: Open Sans;
+    font-weight: 400;
+    margin-right: 180px;
+}
+
+.money-text {
+    color: #535865;
+    margin-top: 15px;
+    margin-left: 600px;
+    font-size: 0.8rem;
+    font-family: Open Sans;
+    font-weight: 400;
+    margin-right: 180px;
+    margin-bottom: 10px;    
+}
+
+.status-bar-background {
+    position: relative;
+    width: 500px;
+    height: 6px;
+    background-color: #f4f4f6;
+    border-radius: 3px;
+    margin-left: 600px;
+}
+
+.status-bar {
+    width: 340px;
+    height: 6px;
+    background-color: #088cff;
+    border-radius: 3px;
+}
+
+.icon-plus {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #f4f4f6;
+    border-radius: 20px;
+    margin-left: 470px;
+    top: -12px;
+}
+
+.icon-plus-blue {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #088cff;
+    border-radius: 20px;
+    margin: 4px;
+}
+
+.plus {
+    position: absolute;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: Open Sans;
+    font-weight: 500;
+    bottom: -4px;
+    right: 4px;
+}
+/*a*/, .see-all {
+    text-decoration: none;
+    margin-left: 424px;
+    color: #ced1d8;
+    margin-top: 59px;
+    font-size: 1rem;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+}
+
+>>>>>>> f44613ae94b085c6660acc8eacb8f52917fab033
