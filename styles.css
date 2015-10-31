@@ -88,7 +88,7 @@ body {
     text-decoration: none;
 }
 
-/* Menu items with icons =========================== 
+/* Menu items with icons =========================== */
 .icon-menu {
     position: absolute;
     margin: 0;
@@ -301,12 +301,11 @@ body {
 
 /* HOME PAGE =============================================================================================== */
 .wrapper {
- height: 100%;
   margin:auto;
   background: rgba(244,244,246,96);
   width: 1280px;
-  height: 630px;
- }
+  height: 100%
+  }
  
 
 h1 {
@@ -331,60 +330,58 @@ figure figcaption {
 	color: #C1C5CD;
 	font-family: 'Roboto-Condensed'
 }
-
 .artist-1 {
-	position: absolute;
+    position:absolute;
 	top: 7%;
-	left: 20%;
+	left: 15%;
 }
 .artist-2 {
-position: absolute;
-top: 40%;
-left:2%;
+    position:absolute;
+    top: 30%;
+    left:1%;
 }
 
 .artist-3{
-	position: absolute;
+    position:absolute;
 	top: 20%;
-	left: 40%
+	left: 30%
 }
 
 .artist-4 {
-	position: absolute;
+    position:absolute;
 	top: 10%;
 	right: 10%;
 }
 .artist-5{
-	position: absolute;
-	bottom: 20%;
+    position:absolute;
+    top: 55%;
 	left: 80%;
 }
 .artist-6{
-	position: absolute;
-	bottom: 30%;
-	left: 35%;
+    position:absolute;
+	top: 48%;
+	left: 30%;
 }
 .artist-7{
-	position: absolute;
-	bottom: 20%;
-	left: 18%;
+    position:absolute;
+	top: 55%;
+	left: 13%;
 }
 .artist-8{
-	position: absolute;
-	bottom: 25%;
-	left: 50%;
+    position:absolute;
+	top: 55%;
+	left: 55%;
 }
 .artist-9{
-	position: absolute;
+    position:absolute;
 	bottom: 40%;
-	right: 15%;
+	right: 18%;
 }
 .artist-10{
-	position: absolute;
+    position:absolute;
 	bottom: 40%;
 	left: 90%;
 }
-
 figure img {
 	border-radius: 50%;
 	border: 2px #FFFFFF solid;
@@ -392,21 +389,26 @@ figure img {
     -moz-box-shadow:    1px 1px 4px 0px rgba(111, 117, 136, 0.51);
     box-shadow:         1px 1px 4px 0px rgba(111, 117, 136, 0.51);
 }
-
-.content {
-  box-sizing: border-box;
-  min-height: 100%;
-  padding-bottom: 90px;
-  background: rgba(244,244,246,96);
+.all-artists{
+    position:absolute;
+    bottom:10%;
+    right:1%;
+    color: #088CFF;
+    text-decoration: none;
+	font-size: 14px;
+	padding: 10px;
+    font-family: 'Roboto Condensed';
 }
 footer {
 	background: #fff;
-	
 	font-size: 11px;
+    width:inherit;
 }
 
 #footer {
-	max-width: 1280px;
+	max-width: inherit;
+    clear: both;
+    float:left;
 	margin: auto;
 	padding: 10px 0;
 	height: 90px;
@@ -424,8 +426,8 @@ footer {
 	}
 #sitemap {
 	position: absolute;
-	left: 25%;
-	width: 100%;
+    text-align:center;
+	width: 920px;
     display: inline-block;
 	overflow: hidden;
 }
@@ -483,18 +485,77 @@ background: #7A6B67 url(PNG/ok.png)center center no-repeat;
 .odnoklassniki:hover {
   background: #ED812B url(PNG/ok.png)center center no-repeat;
  }
- .designed-by{
-    float: right;
-	margin-top: -10px;
-	font-size: 10px;
-	text-align: left;
-	margin-right: -120px;
+  .traineeship{
+    position: absolute;
+    top: 50%;
+    right: 10%;
  }
- .traineeship{
-	 background: url(png/traineeship logo normal.png)center center no-repeat;
-	 background-size: 170px 40px;
+ .team-logo{
+     position: absolute;
+     top: 40%;
+     right: 1%;
  }
- .traineeship:hover{
-	 background: url(png/traineeship logo hover.png)center center no-repeat;
-	 background-size: 170px 40px;
+/* Ended-project page  */
+  .Page-title{
+    float:left;
+    margin-top: 10px;
+    margin-left: 50px;
  }
+.Page-title h1{
+   color: #088CFF;
+   font-family: 'Roboto Condensed';
+   margin-bottom: -15px; 
+}
+.Page-title p{
+   padding-left: 5px;
+   font-size: 12px;
+   font-family: 'Open Sans';
+   color: #6f7588;   
+}
+.mcqueen{
+    position:relative;
+    left:50px;
+    top:100px;
+    height:410px;
+    width:420px;
+    background-color: #ffffff;
+    border: 2px dashed solid black;
+      -webkit-box-shadow: -1px 1px 9px 1px rgba(111, 117, 136, 0.2);
+    -moz-box-shadow: -1px 1px 9px 1px rgba(111, 117, 136, 0.2);
+    box-shadow: -1px 1px 9px 1px rgba(111, 117, 136, 0.2);
+ }
+ .mcqueen img{
+     height:190px;
+     width:380px;
+     margin-left:20px;
+     margin-right:20px;
+     margin-top:20px;
+ }
+ .sprite a {
+     
+	float: left;
+	display: inline-block;
+    margin-top:55px;
+	margin-left:20px;
+	background-image: url('png/sprite.png');
+	background-repeat: no-repeat;
+	background-size: 100px auto;
+ }
+.sprite .checkpoint {background: url('png/sprite.png') no-repeat -1px -1px;
+	width: 30px;
+	height: 41px;}
+.sprite .view {
+    background: url('png/sprite.png') no-repeat -32px -2px;
+	margin-left: 5px;
+    width: 42px;
+	height: 30px;}
+.sprite .like {background: url('png/sprite.png') no-repeat -73px -2px;
+	margin-left: 5px;
+    width: 38px;
+	height: 30px;}
+.sprite .comment {background: url('png/sprite.png') no-repeat -112px -2px;
+	margin-left: 5px;
+    width: 39px;
+	height: 30px;  }
+
+ 
