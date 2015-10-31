@@ -25,8 +25,7 @@ body {
     overflow: hidden;
     -webkit-box-shadow: 0px 3px 2px 0px rgba(111, 117, 136, 0.57);
     -moz-box-shadow: 0px 3px 2px 0px rgba(111, 117, 136, 0.57);
-    box-shadow: 0px 3px 2px 0px rgba(111, 117, 136, 0.57);
-    
+    box-shadow: 0px 3px 2px 0px rgba(111, 117, 136, 0.57);  
 }
 
 .wrapper-header {
@@ -87,62 +86,6 @@ body {
     color: #088CFF;
     text-decoration: none;
 }
-
-/* Menu items with icons =========================== 
-.icon-menu {
-    position: absolute;
-    margin: 0;
-    padding:0;
-    right: 0;
-    width: 260px;
-
-}
-
-.icon-menu li {
-    width: 150px;
-    height: 60px;
-    display: inline-block;
-}
-
-.icon-menu li:last-child {
-    width: 80px;
-} 
-
-.icon-menu li a {
-    text-align: left;
-    position: relative;
-}
-
-
-.icon svg {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    margin-top: 8px;
-    stroke: #535865;
-
-}
-.text p {
-    position: absolute;
-    left: 38px;
-    top: -14px;
-    font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    color: #535865;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-
-.icon-menu li:hover .icon svg {
-    stroke: #088CFF;
-
-}
-.icon-menu li:hover p {
-    color: #088CFF;
-    
-} */
 
 /* END OF HEADER ============================================================================== */
 
