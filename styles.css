@@ -497,7 +497,17 @@ background: #7A6B67 url(PNG/ok.png)center center no-repeat;
 	 background: url(png/traineeship logo hover.png)center center no-repeat;
 	 background-size: 170px 40px;
  }
- 
+ .container{
+	min-height: 100%;
+	margin-bottom: -90px;
+}
+.push{
+	height:90px;
+}
+.footer{
+	background-color: #535865;
+	width:inherit;
+	height:90px;
  
  /* HOMEPAGE-SLIDER-CURRENTPROJECT =============================================================================== */
 
