@@ -283,6 +283,19 @@ a.upbutton i.icon-plus:before {
     top: 0;
     left: 0;
 }
+@-moz-document url-prefix() {
+    a.upbutton i.icon-plus:before {
+        content: "\e800";
+        color: #FFFFFF;
+        font-size: 55px;
+        width: 20px;
+        position: absolute;
+        margin-top: -2px;
+        margin-left: -6px;
+        top: 0;
+        left: 0;
+    }
+}
 
 /* Projects-page-forms ============================= */
 
