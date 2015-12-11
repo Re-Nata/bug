@@ -763,7 +763,7 @@ figure img {
     padding-bottom: 90px;
     background: rgba(244,244,246,96);
 } */
-
+/*FOOTER ============================ */
 #footer {
     background: #fff;
     min-width: 1240px;
@@ -808,6 +808,7 @@ figure img {
 	left: 25%;
     top: 30px;
 }
+
 #sitemap a {
     font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
     font-weight: 700;
@@ -817,11 +818,11 @@ figure img {
     line-height: 14px;
     padding-right: 25px;
     color: #C1C5CD;
+    transition: color 0.4s;
 }
 
-
 #sitemap a:hover {
-	text-decoration: none;
+    text-decoration: none;
 	color: #535865;
 }
 
@@ -839,43 +840,48 @@ figure img {
     cursor: pointer;
     border-radius: 50%;
     margin-right: 1px;
- }
- 
-.vkontakte {
-    background: #7A6B67 url(PNG/vk2-icon.png)center center no-repeat;
-    background-size: 16px 10px;
 }
-	
+
+.vkontakte,
+.vkontakte:hover {
+    background: #7A6B67 url(images/vk2-icon.png)center center no-repeat;
+    background-size: 16px 10px;
+    transition: background 0.5s;
+}
 
 .vkontakte:hover {
-    background: #6996C7 url(PNG/vk2-icon.png)center center no-repeat;
-    background-size: 16px 10px;
+    background-color: #6996C7;
 }
 
-.facebook {
-    background: #7A6B67 url(PNG/fb2-icon.png)center center no-repeat;
-    background-size: 8px 16px;	
+.facebook,
+.facebook:hover {
+    background: #7A6B67 url(images/fb2-icon.png)center center no-repeat;
+    background-size: 8px 16px;
+    transition: background 0.5s;
 } 
 
 .facebook:hover {
-    background: #496194 url(PNG/fb2-icon.png)center center no-repeat;
-    background-size: 8px 16px;
+    background-color: #496194;
 }
 
-.twitter {
-    background: #7A6B67 url(PNG/twitter.png)center center no-repeat;
+.twitter,
+.twitter:hover {
+     background: #7A6B67 url(images/twitter.png)center center no-repeat;
+    transition: background 0.5s;
 }
 
 .twitter:hover {
-    background: #28C3FF url(PNG/twitter.png)center center no-repeat;
+    background-color: #28C3FF;
 }
  
-.odnoklassniki {
-    background: #7A6B67 url(PNG/ok.png)center center no-repeat;
+.odnoklassniki,
+.odnoklassniki:hover {
+    background: #7A6B67 url(images/ok.png)center center no-repeat;
+    transition: background 0.5s;
 } 
 
 .odnoklassniki:hover {
-    background: #ED812B url(PNG/ok.png)center center no-repeat;
+    background-color: #ED812B;
 }
 
 .footer-bottom {
@@ -887,7 +893,8 @@ figure img {
     left: 0;
 }
 
-.footer-bottom p {
+.footer-bottom p,
+.footer-bottom span {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -897,58 +904,55 @@ figure img {
     color: #D2D4DA;
     padding-left: 20px;
     position: absolute;
-    top:-8px;
+    top: -8px;
 }
 
- .traineeship,
- .team-logo {
-	 display: block;
+.footer-bottom span {
+    font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    left: 68.5%;
+    top: 22px;
+}
+
+.traineeship,
+.team-logo {
+     display: block;
      float: right;
      margin: 0 auto;
- }
- 
- .traineeship {
-     height: 40px;
-     width: 170px;     
- }
- 
- .team-logo {
-     width: 116px;
-     height: 60px;
- }
- 
- .traineeship img {
+}
+
+.traineeship img {
      position: absolute;
      right: 130px;
      top: 8px;
- }
- 
- .team-logo img {
+     transition: all 0.5s;
+}
+
+.team-logo img {
      position: absolute;
      right: 10px;
- }
+     transition: all 0.5s;
+}
  
 .traineeship img.traineeship-two,
 .team-logo img.team-logo-two {
-     opacity:0;
-     filter:alpha(opacity=0);
- }
- 
- .traineeship:hover img.traineeship-two,
- .team-logo:hover img.team-logo-two {
-     opacity:1;
-     filter:alpha(opacity=100);
- }
- 
- .traineeship:hover img.traineeship-one,
- .traineeship img.traineeship-one:hover,
- .team-logo:hover img.team-logo-one,
- .team-logo img.team-logo-one:hover {
-     opacity:0;
-     filter:alpha(opacity=0);
- }
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
 
+.traineeship:hover img.traineeship-two,
+.team-logo:hover img.team-logo-two {
+     opacity: 1;
+     filter: alpha(opacity=100);
+}
 
+.traineeship:hover img.traineeship-one,
+.traineeship img.traineeship-one:hover,
+.team-logo:hover img.team-logo-one,
+.team-logo img.team-logo-one:hover {
+     opacity: 0;
+     filter: alpha(opacity=0);
+}
 
 /* ONGOING-PROJECT-PAGE ============================================ */
 
