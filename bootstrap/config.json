@@ -1,0 +1,19 @@
+{
+  "vars": {},
+  "css": [
+    "glyphicons.less",
+    "close.less",
+    "component-animations.less",
+    "dropdowns.less",
+    "modals.less",
+    "carousel.less"
+  ],
+  "js": [
+    "carousel.js",
+    "dropdown.js",
+    "modal.js",
+    "collapse.js",
+    "transition.js"
+  ],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=ad9ddbb8195fe2b8d2f8"
+}
