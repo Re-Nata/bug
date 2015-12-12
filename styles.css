@@ -446,6 +446,13 @@ body {
     margin: 0 auto;
     padding-bottom: 60px;
 }*/
+.current-project-general{
+    max-width:inherit;
+    margin: 0 auto;
+    overflow: hidden; /* temporary */
+    padding: 0;
+    border-bottom: 1px solid #535865;
+}
 
 .current-project {
 	width: 71.875%;
@@ -610,17 +617,154 @@ body {
 }
 
 /* end of project-block ======================= */
+
+/* best projects block ======================== */
+ .best-projects-general{
+     max-width: inherit;
+     background-color:#F4F4F6;
+ }
+ .best-proj-name{
+    padding-left: 2px;
+    margin-top: 20px;
+    color: #949aab;
+	font-family: roboto condensed;
+	font-size: 1rem;
+	text-transform: uppercase;  
+ }
+ .best-projects{
+	width: 960px;
+    overflow: hidden;
+	margin: 0 auto;
+    padding: 0;
+    background-color: inherit;
+}
+
+.best-projects-set {
+    float: left;
+    position: relative;
+    width: 28%; /*280px;*/
+    height: 325px; 
+    margin: 2%; /*20px;*/
+    background: #FFFFFF;
+    box-shadow: 0px 1px 7px -1px rgba(111, 117, 136, 0.7);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.best-projects-set img{
+    width: 100%;
+    height: 144px;
+    border-radius:5px 5px 0px 0px;
+}
+.best-projects-set h3{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color:#088cff;
+    font-size: 14px;
+    padding-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.address-line-short,
+.address-line {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    margin-left: -3px;
+    margin-top: 4px;
+}
+
+.address-line {
+    margin-top: 27px;
+}
+
+.address-text {
+   float: left;
+   padding-top: 5px;
+   color: #6F7588; 
+}
+
+.icon-coordinates:before {
+    content: "\e811";
+    width: 34px;
+    font-size: 40px;
+    float: left;
+    line-height: 18px;
+    color: #6F7588;
+}
+
+.best-proj-bottom-section {
+    width: 100%;
+    float: left;
+    border-top: 1px solid #C1C5CD; 
+    padding: 0;
+    margin-top: 6px;
+}
+
+ul.icons-set {
+    padding-left: 2px;
+    list-style: none;
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.icons-set li {
+    display: inline-block;
+    padding: 0;
+    margin-right: -2px;
+    list-style: none;
+    color: #6F7588;
+}
+
+.icons-set [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-size: 37px;
+    float: left;
+    color: #6F7588;
+    width: 32px;
+}
+
+i.icon-eye:before {
+    content: "\e812";
+    line-height: 17px;
+}
+
+.icon-heart:before {
+    content: "\e814";
+    line-height: 15px;
+}
+
+.icon-message:before {
+    content: "\e803";
+    line-height: 17px;
+}
+
+.best-proj-bottom-section span {
+    color: #6F7588;
+    float: right;
+    padding-right: 9px;
+    padding-top: 8px;
+}
+
+.best-projects-set p,
+.best-projects-set span {
+    font-family:'Open Sans', Helvetica, Arial, sans-serif;
+    color: #c1c5cd;
+    font-size:12px;
+    padding-left: 5px;
+    margin:auto;
+    text-align: left;
+}
+ /* end of best projects block =======================*/
  
 /* Block with artists ============================================= */
 .home-page-artists-block {
     min-width: 1240px;
-    max-width: 1280px;
+    max-width: inherit;
     overflow: hidden;
     margin: 0 auto;
     padding: 0;
     background-color: #F4F4F6;
-    border-top: 1px solid #535865;
-}
+  }
 
 .wrapper {
     width: 71.875%;
