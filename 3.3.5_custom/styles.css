@@ -1106,7 +1106,8 @@ ul.dropdown-menu {
     display: block;
 }
 
-#projects-page-wrapper {
+#projects-page-wrapper,
+#projects-page-wrapper-1 {
     min-width: 860px;
     max-width: 860px;
     height: 100%;
