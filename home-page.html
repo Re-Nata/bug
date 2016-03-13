@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>BUGvsFEATURE</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600|Roboto+Condensed:400,700|Roboto:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="3.3.5_custom/styles.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt4rdVnuSnlyrukIGf0CuspWjWs7tuaQQ&callback=initMap" async defer></script>
+        <script src="main.js"></script>
+        <meta name="viewport" content="width=1280" />
+        <meta name="viewport" content="width=1280" />
+    </head>
+
+    <body>
+        <div class="main-container">
+            <div class="header">
+            <div class="wrapper-header">
+                <a href="#">
+                <img class="logo-image" src="3.3.5_custom/images/logo.png" alt="Логотип">
+                <h2 class="logo-text">Bug <span>vs</span><br> feature</h2>
+                </a>
+
+            <!-- Main menu -->
+            <ul class="navigation">
+                <li><a href="home-page.html" class="lettering">Главная</a></li>
+                <li><a href="projects-page.html" class="lettering">Проекты</a></li>
+                <li><a href="Artists page.html" class="lettering">Художники</a></li>
+                <li class="dropdown contacts-dropdown">
+                    <button id="dLabel" class="lettering contacts-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Контакты
+                    </button>
+                    <ul class="dropdown-menu contacts-list lettering-second" aria-labelledby="dLabel">
+                        <li>Организационные вопросы <br>+38 012 345 67 89 <br>info@bvsf.org</li>
+                        <li>Технические вопросы <br>+38 012 345 67 89 <br>tech@bvsf.org</li>
+                        <li>Вопросы сотрудничества <br>+38 012 345 67 89</li>
+                        <li>Наши реквизиты  <br>2222 4444 7777 4444</li>
+                    </ul>
+                </li>
+
+                <li class="space">
+                   <a href="#" class="lettering"><i class="icon-060__life-buoy"></i>Помочь проекту</a>
+                </li>
+
+                <li>
+                   <a href="#" class="lettering"><i class="icon-login"></i>Войти</a>
+                </li>
+            </ul>
+            <!-- End of main menu -->
+
+            </div> <!-- .wrapper -->
+        </div> <!-- .header -->
+
+
+         <div class="home-page-content">
+             <div class="slider">
+                 <div id="main-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+                       <!-- Indicators -->
+                       <ol class="carousel-indicators">
+                           <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                           <li data-target="#main-slider" data-slide-to="1"></li>
+                           <li data-target="#main-slider" data-slide-to="2"></li>
+                       </ol>
+
+                       <!-- Wrapper for slides -->
+                       <div class="carousel-inner" role="listbox">
+                           <div class="item active">
+                               <img src="3.3.5_custom/images/slider-img-1.png" alt="Mcqueen-project">
+                               <div class="carousel-caption">
+                                   <h2 class="lettering">Маквин</h2>
+                                   <h3 class="lettering">У тебя есть оригиналная идея? Найди для своей доброй творческой души площадку самореализации!</h3>
+                                   <a href="#" class="go-button lettering">Смотреть проект</a>
+                               </div>
+                           </div> <!-- .item -->
+                           <div class="item">
+                               <img src="3.3.5_custom/images/img3.jpg" alt="Simon's Cat project'">
+                               <div class="carousel-caption">
+                                   <h2 class="lettering">Кот Саймона</h2>
+                                   <h3 class="lettering">У тебя есть оригиналная идея? Найди для своей доброй творческой души площадку самореализации!</h3>
+                                   <a href="#" class="go-button lettering">Смотреть проект</a>
+                               </div>
+                           </div> <!-- .item -->
+                       </div> <!-- .carousel-inner -->
+
+                       <!-- Controls -->
+                       <a class="left carousel-control" href="#main-slider" role="button" data-slide="prev">
+                           <span aria-hidden="true"><i class="icon-arrow_left"></i></span>
+                           <span class="sr-only">Previous</span>
+                       </a>
+                       <a class="right carousel-control" href="#main-slider" role="button" data-slide="next">
+                           <span aria-hidden="true"><i class="icon-arrow_right"></i></span>
+                           <span class="sr-only">Next</span>
+                       </a>
+                 </div> <!-- #main-slider -->
+             </div> <!-- .slider -->
+
+             <div class="current-project-wrapper">
+                 <div class="current-project">
+                 <p class="best-project-name lettering">Текущий проект</p>
+                 <img src="3.3.5_custom/images/podjezd.jpg" alt="Подъезд">
+                 <div class="project-info">
+                     <h2 class="lettering">Подъезд</h2>
+                     <div class="bottom-section">
+                         <ul class="icons-set">
+                             <li class="lettering-second"><i class="icon-eye"></i>367</li>
+                             <li class="lettering-second"><a href="#"><i class="icon-heart"></i></a>93</li>
+                             <li class="lettering-second"><a href="#"><i class="icon-message"></i></a>113</li>
+                         </ul>
+                     </div> <!-- .bottom-section -->
+
+                     <p class="lettering-second">Такую вот этим летом у нас заказали лестничную клетку :) Теперь она каждый день радует сказочный 9-ый этаж :)</p>
+
+                     <div class="address-line">
+                         <span class="address-text lettering-second"><i class="icon-coordinates"></i>Киев, ул. Генерала Тупикова, 17</span>
+                     </div>
+
+                     <div class="money-info"> <!-- information about purchased materials -->
+                     <span>Средства</span>
+                     <div class="progress"><div class="progress-status" style="width:87%;"></div></div> <!-- 1st progress line -->
+                     <a href="#" class="button"><i class="icon-plus"></i></a>
+                     <ul>
+                         <li><strong>87%</strong> собрано</li>
+                         <li><strong>2790</strong> из <strong>3000</strong> гривен</li>
+                     </ul>
+                     </div>
+
+                     <a href="/artists-page.html" class="see-more lettering">Подробнее</a>
+                     <a href="/artists-page.html" class="see-all lettering">Смотреть все</a>
+
+                 </div> <!-- .project-info -->
+
+             </div> <!-- .current-project -->
+             </div> <!-- .current-project-wrapper -->
+
+             <div class="best-projects-container">
+             <div class='best-projects'>
+                 <p class="best-project-name lettering">Лучшие проекты</p>
+                 <!-- .project-block 1 -->
+                        <div class="project-block lettering-second">
+                             <img src="3.3.5_custom/images/img3.jpg" alt="Simon's cat">
+
+                            <h2>Кот Саймона</h2>
+
+                            <div class="project-text-block">
+                                <p>Вот такой получился красивый подъезд. Всем кошатникам посвящается. Любознательный кот исследует подъезд.</p>
+                            </div> <!-- .project-text-block-short -->
+
+                            <div class="address-line">
+                                <span class="address-text lettering-second"><i class="icon-coordinates"></i>Киев, ул. Генерала Тупикова, 17</span>
+                            </div>
+
+                            <div class="bottom-section">
+                                 <ul class="icons-set">
+                                     <li class="lettering-second"><i class="icon-eye"></i>367</li>
+                                     <li class="lettering-second"><a href="#"><i class="icon-heart"></i></a>93</li>
+                                     <li class="lettering-second"><a href="#"><i class="icon-message"></i></a>113</li>
+                                 </ul>
+                                 <span>03.09.2015</span>
+                            </div> <!-- .bottom-section -->
+                        </div> <!-- .project-block #1 -->
+
+                        <!-- .project-block #2 -->
+                        <div class="project-block lettering-second">
+                            <img src="3.3.5_custom/images/mquuenproject.jpg" alt="McQuuen">
+
+                            <h2>Маквин</h2>
+
+                            <div class="project-text-block">
+                                <p>Молния Маквин. Э рон дон дон, обладатель кубка Поршня теперь в вашем подъезде!Селфи с чемпионом обязательно!;)</p>
+                            </div> <!-- .project-text-block-short -->
+
+                            <div class="address-line">
+                                <span class="address-text lettering-second"><i class="icon-coordinates"></i>Киев, ул. Генерала Тупикова, 17</span>
+                            </div>
+
+                            <div class="bottom-section">
+                                 <ul class="icons-set">
+                                     <li class="lettering-second"><i class="icon-eye"></i>367</li>
+                                     <li class="lettering-second"><a href="#"><i class="icon-heart"></i></a>93</li>
+                                     <li class="lettering-second"><a href="#"><i class="icon-message"></i></a>113</li>
+                                 </ul>
+                                 <span>03.09.2015</span>
+                            </div> <!-- .bottom-section -->
+                        </div> <!-- .project-block #2 -->
+
+                        <!-- .project-block #3 -->
+                        <div class="project-block lettering-second">
+                            <img src="3.3.5_custom/images/9qZYoV8kLuQ.jpg" alt="The door to the shelter">
+
+                            <h2>Дверь в бомбоубежище</h2>
+
+                            <div class="project-text-block">
+                                <p>Для того чтобы сделать красоту необязательно долго искать баг, сделай фичу банальному входу в бомбоубежище!</p>
+                            </div> <!-- .project-text-block-short -->
+
+                            <div class="address-line">
+                                <span class="address-text lettering-second"><i class="icon-coordinates"></i>Киев, ул. Генерала Тупикова, 17</span>
+                            </div>
+
+                            <div class="bottom-section">
+                                <ul class="icons-set">
+                                    <li class="lettering-second"><i class="icon-eye"></i>367</li>
+                                    <li class="lettering-second"><a href="#"><i class="icon-heart"></i></a>93</li>
+                                    <li class="lettering-second"><a href="#"><i class="icon-message"></i></a>113</li>
+                                </ul>
+                                <span>03.09.2015</span>
+                            </div> <!-- .bottom-section -->
+
+                        </div> <!-- .project-block #3 -->
+
+             </div> <!-- .best-projects -->
+             </div> <!-- .best-projects-container -->
+
+
+
+  <!-- block with artists -->
+  <div class="home-page-artists-block">
+  <div class="wrapper">
+      <h1 class="lettering">О нас</h1>
+      <p class="lettering">Вреж Киракосян, художник-портретист: "Мне кажется, с детства рисуют абсолютно все. Но некоторые одарены меньше. Одни просто влюбляются в рисование, другие — нет. Те, кто влюбляется, в последствии и становятся художниками. Если, конечно, проявляют трудолюбие и упорство и если не дают житейским заботам заглушить любовь к творчеству."
+      </p>
+<h1>НАШИ ХУДОЖНИКИ</h1>
+		<div class="photos lettering">
+	<figure class="artist-1">
+		<img src="3.3.5_custom/images/Ivan.Chervyakov.jpg" width="84" height="84" alt="Иван Червяков">
+		<figcaption>Иван<br> Червяков</figcaption>
+	</figure>
+	<figure class="artist-2">
+		<img src="3.3.5_custom/images/Alina.Neizhberg.jpg" width="90" height="90" alt="Алина Нейбург">
+		<figcaption>Алина<br> Нейбург</figcaption>
+	</figure>
+	<figure class="artist-3">
+		<img src="3.3.5_custom/images/Batogovsky.Artem.jpg" width="118" height="118" alt="Артем Батоговский">
+		<figcaption>Аpтём<br> Батоговский</figcaption>
+	</figure>
+	<figure class="artist-4">
+		<img src="3.3.5_custom/images/Yana.Ivanova.jpg" width="109" height="109" alt="ЯНА ИВАНОВА">
+		<figcaption>Яна<br> Иванова</figcaption>
+	</figure>
+	<figure class="artist-5">
+		<img src="3.3.5_custom/images/Nataliya.Dasyuk.jpg" width="97" height="97" alt="НАТАЛЬЯ ДАСЮК">
+		<figcaption>Наталья<br> Дасюк</figcaption>
+	</figure>
+	<figure class="artist-6">
+		<img src="3.3.5_custom/images/Alyona.Goroh.jpg" width="80" height="80" alt="АЛЕНА ГОРОХ">
+		<figcaption>Алёна<br> Горох</figcaption>
+	</figure>
+	<figure class="artist-7">
+		<img src="3.3.5_custom/images/Marianna.Shatkovskaya.jpg" width="99" height="99" alt="Марианна Шатковская">
+		<figcaption>Марианна<br> Шатковская</figcaption>
+	</figure>
+	<figure class="artist-8">
+		<img src="3.3.5_custom/images/Sasha.Rusanovich.jpg" width="80" height="80" alt="АЛЕКСАНДРА РУСАНОВИЧ">
+		<figcaption>Александра<br> Русанович</figcaption>
+	</figure>
+	<figure class="artist-9">
+		<img src="3.3.5_custom/images/Zahorodniuk.Nastya.jpg" width="118" height="118" alt="АНАСТАСИЯ ЗАГОРОДНЮК">
+		<figcaption>Анастасия<br> Загороднюк</figcaption>
+	</figure>
+	<figure class="artist-10">
+		<img src="3.3.5_custom/images/Ekaterina.Mihalyova.jpg" width="80" height="80" alt="ЕКАТЕРИНА МИЛЕВА">
+		<figcaption>Екатерина<br> Милева</figcaption>
+	</figure>
+	<a href="/artists-page.html" class="all-artists lettering">Смотреть всех</a>
+</div> <!-- .photos -->
+
+</div> <!-- .wrapper -->
+</div> <!-- .home-page-artists-block -->
+ <!-- end of block with artists -->
+
+         </div> <!-- .home-page-content -->
+        </div> <!-- .main-container -->
+
+        <!-- Footer -->
+        <div class="push"></div>
+	<div id="footer">
+        <div class="wrapper-footer">
+		<div class="footer-logo">
+            <h2>Bug <span>vs</span><br> feature</span></h2>
+</div>
+		<div id="sitemap">
+		<a href="/home/">ГЛАВНАЯ</a>
+		<a href="/projects/">ПРОЕКТЫ</a>
+		<a href="/artists/">ХУДОЖНИКИ</a>
+		<a href="/contacts/">КОНТАКТЫ</a>
+		<a href="/donate/">ПОМОЧЬ ПРОЕКТУ</a>
+        </div>
+
+		<div id="social">
+	<a href="http://vk.com/" class="social-icon vkontakte"></a>
+	<a href="http://facebook.com/" class="social-icon facebook"></a>
+	<a href="http://twitter.com/" class="social-icon twitter"></a>
+	<a href="http://ok.ru/" class="social-icon odnoklassniki"></a>
+	</div>
+
+        <div class="footer-bottom">
+            <p>© 2015 BVSF.ORG</p>
+			<span> Designed by</span>
+	<a href="#" class="traineeship">
+        <img class="traineeship-one" src="3.3.5_custom/images/traineeship logo normal.png">
+        <img class="traineeship-two" src="3.3.5_custom/images/traineeship logo hover.png">
+    </a>
+
+    <a href="#" class="team-logo">
+        <img class="team-logo-one" src="3.3.5_custom/images/team logo normal.png">
+        <img class="team-logo-two" src="3.3.5_custom/images/team logo hover.png">
+    </a>
+    </div> <!-- .footer-bottom -->
+    </div> <!-- .wrapper-footer -->
+</div> <!-- #footer -->
+    </body>
+</html>

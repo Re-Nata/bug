@@ -1,0 +1,301 @@
+<!doctype html>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>BUGvsFEATURE</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600|Roboto+Condensed:400,700|Roboto:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bootstrap/3.3.5_custom/css/bootstrap.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="3.3.5_custom/styles.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="bootstrap/3.3.5_custom/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt4rdVnuSnlyrukIGf0CuspWjWs7tuaQQ&callback=initMap" async defer></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div id="projects-page-wrapper"> <!-- main container -->
+
+        <h2>Маквин</h2>
+        <p class="project-date lettering-second">12.08.15</p>
+
+        <div class="projects-page-content"> <!-- container with all content-blocks -->
+
+            <div class="left-blocks-container"> <!-- LEFT-CONTAINER  -->
+
+            <!-- first block of left-container -->
+            <div class="project-example">
+                <img src="images/81ZhVGyR9LY.jpg" alt="Маквин">
+                <div class="additional-photos">
+                    <img src="images/y4xRK2u3Xd0.jpg" alt="Проект. Дополнитеное фото">
+                    <img src="images/q10Nhga8QXc.jpg" alt="Проект. Дополнитеное фото">
+                    <img src="images/0Mj2lMi7gDQ.jpg" alt="Проект. Дополнитеное фото">
+                </div> <!-- .additional-photos -->
+
+                <p class="lettering-second">Найди для своей доброй творческой души площадку самореализации! У тебя есть оригиналная идея, как вдохнуть душу в эти стульчики для деток из детского центра "Малятко"?</p>
+
+                <div class="bottom-section">
+                    <ul class="icons-set">
+                         <li class="lettering-second"><i class="icon-eye"></i>367</li>
+                         <li class="lettering-second"><a href="#"><i class="icon-heart"></i></a>93</li>
+                         <li class="lettering-second"><a href="#"><i class="icon-message"></i></a>113</li>
+                    </ul>
+                    <a class="share-information lettering-second" href="#"><i class="icon-megaphone"></i>Рассказать друзьям</a>
+                </div> <!-- .bottom-section -->
+            </div> <!-- .project-example -->
+
+            <!-- second block of left-container -->
+            <div class="organizers-participants ended-project lettering-second clearfix">
+                <p>Участники проекта <span>(10)</span></p>
+                <img src="images/Zahorodniuk.Nastya.jpg" alt="Анастасия Загороднюк">
+                <img src="images/Batogovsky.Artem.jpg" alt="Артём Батоговский">
+                <img src="images/Alina.Neizhberg.jpg" alt="Алина Нейенбург">
+                <img src="images/Nataliya.Dasyuk.jpg" alt="Наталья Дасюк">
+                <img src="images/Sasha.Rusanovich.jpg" alt="Александра Русанович">
+                <img src="images/Alina.Neizhberg.jpg" alt="Алина Нейенбург">
+                <img src="images/Nataliya.Dasyuk.jpg" alt="Наталья Дасюк">
+                <img src="images/Sasha.Rusanovich.jpg" alt="Александра Русанович">
+
+                <div id="participants-additional-section" class="Показать всех" style="display: none;">
+                    <img src="images/Zahorodniuk.Nastya.jpg" alt="Анастасия Загороднюк">
+                    <img src="images/Batogovsky.Artem.jpg" alt="Артём Батоговский">
+                </div> <!-- #participants-additional-section -->
+
+                <a id="ShowHide3" class="show-hide">Показать всех</a>
+
+            </div> <!-- .organizers-participants -->
+
+            <!-- third fourth block in left-container -->
+            <div class="total-amount lettering-second">
+                <p>На проект было затрачено</p>
+                <div class="left-side">
+                    <ul>
+                        <li class="result colour">Время</li>
+                        <li class="colour"><strong>267</strong></li>
+                        <li class="result colour">Деньги</li>
+                        <li class="colour"><strong>1000 грн</strong></li>
+                        <li class="result">Краска</li>
+                        <li><strong>80 л</strong></li>
+                        <li class="result">Штукатурка</li>
+                        <li><strong>10 кг</strong></li>
+                    </ul>
+                </div>
+                <div class="right-side">
+                    <ul>
+                        <li class="result">Шпатель</li>
+                        <li><strong>10 шт</strong></li>
+                        <li class="result">Стремянка</li>
+                        <li><strong>2 шт</strong></li>
+                        <li class="result">Болгарка</li>
+                        <li><strong>1 шт</strong></li>
+                        <li class="result">Шпаклёвка</li>
+                        <li><strong>7 кг</strong></li>
+                    </ul>
+                </div>
+            </div> <!-- .total-amount -->
+
+            <!-- fourth block in left-container -->
+                <div class="comments-box lettering-second">
+
+                     <form class="comments-form">
+                         <p>
+                             <label for="comments"  class="label lettering-second"><strong>Комментарии</strong> <span>(4)</span></label>
+                             <textarea name="comments" class="lettering-second" id="comments"></textarea>
+                         </p>
+                         <p>
+                             <input type="submit" class="lettering-second" value="Написать">
+                         </p>
+                     </form>
+
+                     <div class="comments-section">
+                         <div class="message">
+                             <img src="images/Zahorodniuk.Nastya.jpg" alt="Анастасия Загороднюк">
+                             <ul>
+                                 <li>Анастасия Загороднюк</li>
+                                 <li>1 сен в 18:30</li>
+                             </ul>
+                             <p>
+                                 На что денег хватит и в зависимости от того, за сколько денег бригаду найдем ) Сначала думали 1 этаж ремонтировать - теперь не знаем, может, за весь подъезд будет скидка за объем и+ когда-то всё равно придется ремонтировать другие этажи.
+                             </p>
+                         </div> <!-- .message -->
+
+                         <div class="message">
+                             <img src="http://chiefsinner.org/wp-content/uploads/2015/09/Comment-button.jpg">
+                             <ul>
+                                 <li>Михаил Стронский</li>
+                                 <li>2 сен в 22:43</li>
+                             </ul>
+                             <p>
+                                 Так а что делать-то собираетесь?
+                             </p>
+                         </div> <!-- .message -->
+
+                         <div class="message">
+                             <img src="images/Zahorodniuk.Nastya.jpg" alt="Анастасия Загороднюк">
+                             <ul>
+                                 <li>Анастасия Загороднюк</li>
+                                 <li>5 минут назад</li>
+                             </ul>
+                             <p>
+                                 Михаил, на что денег хватит и в зависимости от того, за сколько денег бригаду найдем ) Сначала думали 1 этаж ремонтировать - теперь не знаем.
+                             </p>
+                         </div> <!-- .message -->
+
+                         <div id="additional-comments" class="Показать все" style="display: none;">
+                             <div class="message">
+                                 <img src="http://chiefsinner.org/wp-content/uploads/2015/09/Comment-button.jpg">
+                                 <ul>
+                                     <li>Михаил Стронский</li>
+                                     <li>2 минуты назад</li>
+                                 </ul>
+                                 <p>
+                                     Понятно. Отличная инициатива.
+                                 </p>
+                             </div> <!-- .message -->
+                         </div> <!-- #additional-comments -->
+
+                         <a id="ShowHide2" class="show-hide">Показать все</a>
+
+                     </div> <!-- .comments-section -->
+                </div> <!-- .comments-box -->
+            </div> <!-- .left-blocks-container -->
+
+            <div class="right-blocks-container"> <!-- RIGHT-CONTAINER  -->
+
+            <!-- first block of right-container: Map -->
+            <div class="map-wrapper">
+                <div id="map">
+                </div> <!-- #map -->
+                <div class="address-line">
+                    <a class="address-text lettering-second" href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB.+%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D0%BB%D0%B0+%D0%A2%D1%83%D0%BF%D1%96%D0%BA%D0%BE%D0%B2%D0%B0,+17,+%D0%9A%D0%B8%D1%97%D0%B2/@50.444027,30.4377489,17z/data=!3m1!4b1!4m2!3m1!1s0x40d4cc220d46600f:0x4ac6bb50b557ecf4" target="blank"><i class="icon-coordinates"></i>Киев, ул. Генерала Тупикова, 17</a>
+                </div>
+            </div> <!-- .map-wrapper -->
+
+            <div class="organizers-participants lettering-second clearfix">
+                <p>Организаторы</p>
+                <img src="images/Zahorodniuk.Nastya.jpg" alt="Анастасия Загороднюк">
+                <span>Анастасия Загороднюк</span>
+                <ul class="connection-icons-set"> <!-- Icons block -->
+                <!-- The first icon -->
+                <li>
+                    <i id="phonenumber1" class="icon-telephone call"></i>
+                    <div class="phone" style="display: none;">+38 012 345 67 89</div>
+                </li>
+
+                <!-- The second icon -->
+                <li>
+                    <a href="#"><i class="icon-mail"></i></a>
+                </li>
+
+                <!-- The third icon -->
+                <li>
+                    <a href="#"><i class="icon-vk"></i></a>
+                </li>
+
+                <!-- The fourth icon -->
+                <li>
+                    <a href="#"><i class="icon-facebook-2"></i></a>
+                </li>
+
+                </ul> <!-- End of icons block -->
+
+                <img src="images/Batogovsky.Artem.jpg" alt="Артём Батоговский">
+                <span>Артём Батоговский</span>
+                <ul class="connection-icons-set"> <!-- Icons block -->
+
+                <!-- The first icon -->
+                <li>
+                    <i id="phonenumber2" class="icon-telephone call"></i>
+                    <div class="phone" style="display: none;">+38 012 345 67 89</div>
+                </li>
+
+                <!-- The second icon -->
+                <li>
+                    <a href="#"><i class="icon-mail"></i></a>
+                </li>
+
+                <!-- The third icon -->
+                <li>
+                    <a href="#"><i class="icon-vk"></i></a>
+                </li>
+
+                <!-- The fourth icon -->
+                <li>
+                    <a href="#"><i class="icon-facebook-2"></i></a>
+                </li>
+
+                </ul> <!-- End of icons block -->
+
+            </div> <!-- .organizers-participants -->
+
+            <div class="all-events-section lettering-second">
+                <p><strong>Завершенные события</strong></p>
+
+                <div class="ended-events-section">
+                    <ul>
+                        <li>21</li>
+                        <li>авг</li>
+                    </ul>
+                    <p class="event-time">Пт 10:00 - 14:00</p>
+                    <p>Раскрашиваем элементы фасада, красим стены 2 и 3-й раз в голубой + красим там, где была штукатурка</p>
+                    <span><i class="icon-user"></i><strong>12</strong> участников</span>
+                </div> <!-- .ended-events-section -->
+
+                <div class="ended-events-section">
+                    <ul>
+                        <li>16</li>
+                        <li>авг</li>
+                    </ul>
+                    <p class="event-time">Cб 10:00 - 12:00</p>
+                    <p>Разметка торцевой стены</p>
+                    <span><i class="icon-user"></i><strong>9</strong> участников</span>
+                </div> <!-- .ended-events-section -->
+
+                <div class="ended-events-section">
+                    <ul>
+                        <li>13</li>
+                        <li>авг</li>
+                    </ul>
+                    <p class="event-time">Cб 12:00 - 16:00</p>
+                    <p>Разметка торцевой стены, доработка деталей на лицевой, разметка</p>
+                    <span><i class="icon-user"></i><strong>16</strong> участников</span>
+                </div> <!-- .ended-events-section -->
+
+                <div class="ended-events-section">
+                    <ul>
+                        <li>12</li>
+                        <li>авг</li>
+                    </ul>
+                    <p class="event-time">Пт 12:00 - 16:00</p>
+                    <p>Разметка оставшихся стен, раскраска, доработка деталей</p>
+                    <span><i class="icon-user"></i><strong>24</strong> участника</span>
+                </div> <!-- .ended-events-section -->
+
+                <div id="more-events" class="Показать все" style="display: none;">
+                    <div class="ended-events-section">
+                        <ul>
+                            <li>08</li>
+                            <li>авг</li>
+                        </ul>
+                        <p class="event-time">Пт 12:00 - 16:00</p>
+                        <p>Разметка оставшихся стен, раскраска, доработка деталей</p>
+                        <span><i class="icon-user"></i><strong>18</strong> участников</span>
+                    </div> <!-- .ended-events-section -->
+                </div> <!-- #more-events-->
+
+                <a id="ShowHide4" class="show-hide">Показать все</a>
+
+            </div> <!-- .all-events-section -->
+
+            </div> <!-- .right-blocks-container -->
+
+        </div> <!-- .projects-page-content -->
+
+        </div> <!-- #projects-page-wrapper -->
+
+    </body>
+
+</html>
+
+
+

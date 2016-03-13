@@ -1,0 +1,33 @@
+{
+  "vars": {},
+  "css": [
+    "forms.less",
+    "buttons.less",
+    "responsive-utilities.less",
+    "glyphicons.less",
+    "input-groups.less",
+    "navs.less",
+    "navbar.less",
+    "breadcrumbs.less",
+    "pagination.less",
+    "thumbnails.less",
+    "progress-bars.less",
+    "media.less",
+    "responsive-embed.less",
+    "close.less",
+    "component-animations.less",
+    "dropdowns.less",
+    "modals.less",
+    "carousel.less"
+  ],
+  "js": [
+    "button.js",
+    "carousel.js",
+    "dropdown.js",
+    "modal.js",
+    "tab.js",
+    "collapse.js",
+    "transition.js"
+  ],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=4b2e5646d9acca8eef5b"
+}
