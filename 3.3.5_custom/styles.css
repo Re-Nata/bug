@@ -410,7 +410,6 @@ ul.dropdown-menu {
     border-left: 2px solid #C1C5CD;
     border-right: 2px solid #C1C5CD;
     border-bottom: 2px solid #C1C5CD;
-
 }
 
 ul.dropdown-menu.first-dropdown {
@@ -1039,13 +1038,7 @@ li.extended {
 }
 
 .contacts-button:focus,
-.contacts-button:active {
-    border: 2px solid #C1C5CD;
-    border-bottom: 2px solid #FFFFFF;
-    border-radius: 2px;
-    color: #3399FF;
-}
-
+.contacts-button:active,
 .contacts-button:hover {
     color: #3399FF;
 }
@@ -1069,20 +1062,61 @@ li.extended {
 
 
 .contacts-list li:first-child {
-    background-image: -webkit-linear-gradient(left, #C1C5CD 0%, #C1C5CD 52%, #FFFFFF 52%, #FFFFFF 100%);
-    background-size: 100% 2px;
-    background-repeat: no-repeat;
+    padding-top: 10px;
 }
 
-ul.dropdown-menu {
-    border-radius: 2px;
+ul.contacts-list {
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+    width: 191px;
+    margin-top: 14px;
+    margin-left: 2px;
+}
+
+.block {
+  position: absolute;
+  top: 10px;
+  box-sizing: border-box;
+  height: 230px;
+  border-bottom: 2px solid #C1C5CD;
+  border-right: 2px solid #C1C5CD;
+  border-left: 2px solid #C1C5CD;
+  background-color: #FFFFFF;
+  border-radius: 0 4px 0 0;
+
+}
+
+.block:before {
+  display: block;
+  content: '';
+  height: 34px;
+  width: 50%;
+  border-top: 2px solid #C1C5CD;
+  border-left: 2px solid #C1C5CD;
+  border-right: 2px solid #C1C5CD;
+  -webkit-border-radius: 4px 0 0 0;
+  -moz-border-radius: 4px 0 0 0;
+  border-radius: 4px 4px 0 0;
+  position: absolute;
+  top: -34px;
+  right: -1.5px;
+}
+
+.block:after {
+  display: block;
+  content: '';
+  margin-top: -232px;
+  width: 98px;
+  height: 0px;
+  margin-left: -101px;
+  border-bottom: 2px solid #C1C5CD;
+  position: absolute;
+  left: 99px;
 }
 
 .contacts-list li:last-child {
     padding-bottom: 12px;
 }
-
-
 
 /* ================= ONGOING PAGE and ENDED PAGE ================ */
 .clearfix:after {
