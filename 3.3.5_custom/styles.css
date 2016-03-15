@@ -1073,7 +1073,8 @@ ul.contacts-list {
     margin-left: 2px;
 }
 
-.block {
+.block,
+.block-1 {
   position: absolute;
   top: 10px;
   box-sizing: border-box;
@@ -1086,7 +1087,8 @@ ul.contacts-list {
 
 }
 
-.block:before {
+.block:before,
+.block-1:before {
   display: block;
   content: '';
   height: 34px;
@@ -1102,7 +1104,8 @@ ul.contacts-list {
   right: -1.5px;
 }
 
-.block:after {
+.block:after,
+.block-1:after {
   display: block;
   content: '';
   margin-top: -232px;
@@ -1112,6 +1115,10 @@ ul.contacts-list {
   border-bottom: 2px solid #C1C5CD;
   position: absolute;
   left: 99px;
+}
+
+.block-1:after {
+    margin-top: -229px;
 }
 
 .contacts-list li:last-child {
