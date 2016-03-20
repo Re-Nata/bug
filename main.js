@@ -107,15 +107,16 @@ $(".fancybox").fancybox({
     padding: 0,
     openEffect  : 'none',
     closeEffect : 'none',
-    afterLoad   : function() {
+    afterLoad   : function(ev) {
+         unroll2 = ev.content.get()[0].getElementsByClassName('gallery')[0].getElementsByClassName('thumbs')[0];
+         after = unroll2.firstElementChild.getAttribute('src');
+         $('.largeImage').attr('src', after);
          this.content.html();
     }
 });
-
 
 //for carousel on ongoing page
 $('#thumbs').delegate('img','click', function(){
     $('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
     $('#description').html($(this).attr('alt'));
 });
-
