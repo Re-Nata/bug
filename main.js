@@ -21,6 +21,12 @@ window.onload = function() {
     // send data here
     $('div#offer').hide(); });
 
+    //for carousel on ongoing page
+    $('.thumbs').delegate('img','click', function() {
+        $('.largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+        //$('#description').html($(this).attr('alt'));
+    });
+
 };
 
 function openbox(id, ShowHide) {
@@ -99,7 +105,6 @@ function initMap() {
         };
     }); // .each
 } // initMap
-
 
 //for modal gallery on projects page
 $('.fancybox').attr('rel', 'gallery');
