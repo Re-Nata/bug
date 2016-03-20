@@ -441,9 +441,9 @@ ul.dropdown-menu.general-dropdown {
 
 .projects-search {
     width: 340px;
-    position: relative;
+    position: absolute;
     padding: 0;
-    margin: 25px 0 38px 0;
+    margin: 25px 0 38px 30px;
     display: inline-block;
 }
 
@@ -515,7 +515,7 @@ ul.dropdown-menu.general-dropdown {
     color: #C1C5CD;
     margin-top: -19.5px;
     margin-left: -10px;
-    transition: color 0.34s;
+    transition: color 0.4s;
 }
 
 .icon-search:hover:before {
