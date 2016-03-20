@@ -1186,6 +1186,15 @@ textarea#password:focus:-moz-placeholder {
     background-color: #3399FF;
     margin-left: 7.5px;
     margin-top: -5px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    width: 256px;
+    height: 35px;
+    transition: background 0.5s;
+    outline: none;
 }
 
 .dropdown-menu .sign-in-form input[type="submit"]:hover {
