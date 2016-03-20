@@ -533,7 +533,7 @@ a.fancybox {
     position: absolute;
     z-index: 1000;
     width: 278.703px;
-    height: 325px;
+    height: 260px;
     margin: 1.61290323%;
 }
 
@@ -629,7 +629,7 @@ a.fancybox {
     background: #FFFFFF;
     box-shadow: 0px 1px 7px -1px rgba(111, 117, 136, 0.7);
     border-radius: 2px;
-    cursor: pointer;
+    cursor: default;
 }
 
 .project-block img {
@@ -755,6 +755,10 @@ span.amount {
    float: left;
    padding-top: 5px;
    color: #6F7588;
+}
+
+.address-text:hover {
+   color: inherit;
 }
 
 .icon-coordinates:before {
@@ -1885,12 +1889,15 @@ a.show-hide:hover {
     list-style: none;
 }
 
+.organizers-participants .connection-icons-set li:first-child {
+    padding-right: 10px;
+}
+
 .connection-icons-set li {
     display: inline-block;
     cursor: default;
-    vertical-align: bottom;
     margin-top: -6px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
     vertical-align: top;
 }
 
