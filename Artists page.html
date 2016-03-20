@@ -34,7 +34,7 @@
                     <button id="dLabel" class="lettering contacts-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Контакты
                     </button>
-                    <ul class="dropdown-menu contacts-list block" aria-labelledby="dLabel">
+                    <ul class="dropdown-menu contacts-list block-3" aria-labelledby="dLabel">
                         <li class="lettering-second">Организационные вопросы <br>+38 012 345 67 89 <br>info@bvsf.org</li>
                         <li class="lettering-second">Технические вопросы <br>+38 012 345 67 89 <br>tech@bvsf.org</li>
                         <li class="lettering-second">Вопросы сотрудничества <br>+38 012 345 67 89</li>
@@ -46,8 +46,29 @@
                    <a href="#" class="lettering"><i class="icon-060__life-buoy"></i>Помочь проекту</a>
                 </li>
 
-                <li>
-                   <a href="#" class="lettering"><i class="icon-login"></i>Войти</a>
+                <li class="dropdown contacts-dropdown" style="padding-right: 0;">
+                    <button id="dLabel" class="lettering contacts-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <a href="#" class="lettering" style="margin-top: 0;"><i class="icon-login"></i>Войти</a>
+                   </button>
+                   <div class="dropdown-menu contacts-list lettering-second block-2" style="width: 276px; box-shadow:none; border-top: none; border-radius: 0 0 4px 4px;" aria-labelledby="dLabel">
+                       <form class="sign-in-form"  method="post">
+                    <p>
+                        <textarea name="e-mail" class="lettering-second" id="e-mail" placeholder="E-mail"></textarea>
+                        <textarea name="password" class="lettering-second" id="password" placeholder="Пароль"></textarea>
+                    </p>
+                    <ul class="options">
+                        <li>
+                            <input type="radio" id="radio" name="radio-button">
+                            <label for="radio">Запомнить меня</label>
+                        </li>
+                        <li><a href="#">Забыли пароль?</a></li>
+                    </ul>
+                    <p>
+                        <input type="submit" class="lettering" value="Войти">
+                    </p>
+                </form>
+                <a class="registration-link">Регистрация</a>
+                   </div> <!-- .block-2 -->
                 </li>
             </ul>
             <!-- End of main menu -->

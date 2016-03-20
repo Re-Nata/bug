@@ -172,7 +172,7 @@ a:active {
     content: "\e817";
     font-size: 40px;
     float: left;
-    margin-top: 2px;
+    margin-top: 0;
 }
 /* END OF HEADER ============================= */
 
@@ -1081,7 +1081,8 @@ ul.contacts-list {
 }
 
 .block,
-.block-2 {
+.block-2,
+.block-3 {
     position: absolute;
     top: 10px;
     box-sizing: border-box;
@@ -1099,7 +1100,8 @@ ul.contacts-list {
 }
 
 .block:before,
-.block-2:before {
+.block-2:before,
+.block-3:before {
     display: block;
     content: '';
     height: 35px;
@@ -1122,7 +1124,8 @@ ul.contacts-list {
 }
 
 .block:after,
-.block-2:after {
+.block-2:after,
+.block-3:after {
     display: block;
     content: '';
     margin-top: -228px;
@@ -1137,6 +1140,10 @@ ul.contacts-list {
 .block-2:after {
     margin-top: -198px;
     width: 161px;
+}
+
+.block-3:after {
+    margin-top: -231px;
 }
 
 /* Sign-in form */
