@@ -2844,7 +2844,7 @@ textarea#help-address:focus:-moz-placeholder {
     color: #C1C5CD;
     font-size: 70px;
     position: absolute;
-    margin-top: -12px;
+    margin-top: -24px;
     margin-left: -9px;
 }
 
@@ -2864,7 +2864,6 @@ textarea#help-address:focus:-moz-placeholder {
     right: 0;
     padding: 0;
     margin: 0;
-    cursor: pointer;
 }
 
 .delete-image i.icon-close:before,
@@ -2882,8 +2881,8 @@ textarea#help-address:focus:-moz-placeholder {
 
 .add-image i.icon-plus:before {
     content: "\e800";
-    margin-top: -11.5px;
-    margin-left: 4px;
+    margin-top: -15px;
+    margin-left: 5px;
 }
 
 .selectfile {
