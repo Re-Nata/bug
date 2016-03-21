@@ -546,6 +546,7 @@ a.fancybox {
     right: -80px;
     color: #FFFFFF;
     height: 65px;
+    z-index: 1000;
 }
 
 .fancybox-nav {
@@ -554,10 +555,12 @@ a.fancybox {
 
 .fancybox-next {
     right: -87px;
+    z-index: 1000;
 }
 
 .fancybox-prev {
     left: -87px;
+    z-index: 1000;
 }
 
 .fancybox-next span {
@@ -567,7 +570,7 @@ a.fancybox {
 .fancybox-prev span {
     background-image: url("images/arrow_left.png");
     background-repeat: no-repeat;
-    background-position: -24px 24px;
+    background-position: -24px 18px;
 }
 
 .fancybox-nav span {
@@ -638,6 +641,8 @@ a.fancybox {
     margin: 0;
     padding: 0;
 }
+
+
 
 .map-tab-left-block .project-block {
     width: 348px;
@@ -1247,7 +1252,7 @@ input[type=radio] {
     display: none;
 }
 
-label:before {
+.dropdown-menu .sign-in-form label:before {
     content: "";
     width: 16px;
     height: 16px;
@@ -1259,21 +1264,21 @@ label:before {
     cursor: pointer;
 }
 
-.radio label:before {
+.dropdown-menu .sign-in-form .radio label:before {
     border-radius: 2px;
 }
 
-.radio + label {
+.dropdown-menu .sign-in-form .radio + label {
     cursor: pointer;
 }
 
-label {
+.dropdown-menu .sign-in-form label {
     margin-left: 17px;
     font-weight: 400;
     cursor: pointer;
 }
 
-input[type=radio]:checked + label:before {
+.dropdown-menu .sign-in-form input[type=radio]:checked + label:before {
     content: "■";
     color: #088CFF;
     font-size: 16px;
@@ -1371,9 +1376,8 @@ a.registration-link:active {
     font-weight: 700;
     font-size: 24px;
     line-height: 14px;
-    margin-left: 58px;
-    margin-top: 18px;
-    margin-bottom: 0;
+    margin: 0 0 0 58px;
+    padding-top: 18px;
     color: #088CFF;
 }
 
@@ -1391,6 +1395,7 @@ p.project-date {
     overflow: hidden;
     margin: 0 auto;
     background-color: inherit;
+    border-radius: 4px;
 }
 
 /* LEFT-CONTAINER ============================= */
@@ -2492,6 +2497,21 @@ a.i-go-button i.icon-choose:before {
     border-radius: 4px;
 }
 
+/* Projects page modal: contacts of organizators ======= */
+#projects-page-wrapper #modal1,
+#projects-page-wrapper #modal2,
+#projects-page-wrapper-1 #modal3,
+#projects-page-wrapper-1 #modal4 {
+    background: rgba(0,0,0,0.7);
+}
+
+#projects-page-wrapper .modal-dialog,
+#projects-page-wrapper-1 .modal-dialog {
+    width: 276px;
+    padding-top: 20%;
+    margin: 0 auto;
+}
+
 /*FOOTER ============================ */
 #footer {
     background: #fff;
@@ -2689,7 +2709,9 @@ a.i-go-button i.icon-choose:before {
 /*to write to organizers */
 #letter-to-organizers,
 #offer,
-.artist-block #letter-to-organizers {
+.artist-block #letter-to-organizers,
+#projects-page-wrapper #letter-to-organizers,
+#projects-page-wrapper-1 #letter-to-organizers {
     width: 276px;
     overflow: hidden;
     border-radius: 1px;
@@ -2700,9 +2722,17 @@ a.i-go-button i.icon-choose:before {
     border-radius: 4px;
 }
 
-.artist-block .modal-content {
+#projects-page-wrapper #letter-to-organizers,
+#projects-page-wrapper-1 #letter-to-organizers {
+    border-radius: 2px;
+}
+
+.artist-block .modal-content,
+#projects-page-wrapper .modal-content,
+#projects-page-wrapper-1 .modal-content {
     width: 276px;
     margin: 0 auto;
+    border: none;
 }
 
 #offer {
@@ -2714,14 +2744,18 @@ a.i-go-button i.icon-choose:before {
 }
 
 .writing-area,
-.artist-block .writing-area {
+.artist-block .writing-area,
+#projects-page-wrapper .writing-area,
+#projects-page-wrapper-1 .writing-area {
     width: inherit;
     overflow: hidden;
     padding: 13px 10px 17px 10px;
 }
 
 #offer .writing-area form.help-orginizers-form p,
-.artist-block #letter-to-organizers .writing-area form.help-orginizers-form p {
+.artist-block #letter-to-organizers .writing-area form.help-orginizers-form p,
+#projects-page-wrapper #letter-to-organizers .writing-area form.help-orginizers-form p,
+#projects-page-wrapper-1 #letter-to-organizers .writing-area form.help-orginizers-form p {
     margin: 0;
     padding: 0;
     width: inherit;
@@ -2733,21 +2767,31 @@ a.i-go-button i.icon-choose:before {
 .artist-block .help-orginizers-form .label,
 .artist-block .help-orginizers-form input[type="submit"],
 .caution-message p,
-a.caution-sign-in {
+a.caution-sign-in,
+#projects-page-wrapper .help-orginizers-form .label,
+#projects-page-wrapper .help-orginizers-form input[type="submit"],
+#projects-page-wrapper-1 .help-orginizers-form .label,
+#projects-page-wrapper-1 .help-orginizers-form input[type="submit"] {
     font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 #offer .help-orginizers-form .label,
-.artist-block .help-orginizers-form .label {
+.artist-block .help-orginizers-form .label,
+#projects-page-wraapper .help-orginizers-form .label,
+#projects-page-wraapper-1 .help-orginizers-form .label {
     color: #6F7588;
     font-size: 14px;
     display: block;
     text-align: left;
+    padding-left: 1px;
 }
 
 #offer .help-orginizers-form input[type="submit"],
-.artist-block .help-orginizers-form input[type="submit"] {
+.artist-block .help-orginizers-form input[type="submit"],
+#projects-page-wrapper .help-orginizers-form input[type="submit"],
+#projects-page-wrapper-1 .help-orginizers-form input[type="submit"]  {
     float: left;
     font-weight: 400;
     font-size: 18px;
@@ -2763,14 +2807,20 @@ a.caution-sign-in {
 }
 
 #offer .help-orginizers-form input[type="submit"]:hover,
-.artist-block .help-orginizers-form input[type="submit"]:hover {
+.artist-block .help-orginizers-form input[type="submit"]:hover,
+#projects-page-wrapper .help-orginizers-form input[type="submit"]:hover,
+#projects-page-wrapper-1 .help-orginizers-form input[type="submit"]:hover {
    background-color: #088CFF;
 }
 
 #offer .help-orginizers-form input[type="text"],
 #offer .help-orginizers-form textarea,
 .artist-block .help-orginizers-form input[type="text"],
-.artist-block .help-orginizers-form textarea {
+.artist-block .help-orginizers-form textarea,
+#projects-page-wrapper .help-orginizers-form input[type="text"],
+#projects-page-wrapper .help-orginizers-form textarea,
+#projects-page-wrapper-1 .help-orginizers-form input[type="text"],
+#projects-page-wrapper-1 .help-orginizers-form textarea {
     color: #6F7588;
     float: left;
     font-size: 14px;
@@ -2783,13 +2833,17 @@ a.caution-sign-in {
     resize: vertical;
     outline: none;
     padding: 7px;
-    margin: 13px 0 13px 0;
+    margin: 7px 0 13px 0;
     transition: background 0.5s;
 }
 #offer .help-orginizers-form input[type="text"]:focus,
 #offer .help-orginizers-form textarea:focus,
 .artist-block .help-orginizers-form input[type="text"]:focus,
-.artist-block .help-orginizers-form textarea:focus {
+.artist-block .help-orginizers-form textarea:focus,
+#projects-page-wrapper .help-orginizers-form input[type="text"]:focus,
+#projects-page-wrapper .help-orginizers-form textarea:focus,
+#projects-page-wrapper-1 .help-orginizers-form input[type="text"]:focus,
+#projects-page-wrapper-1 .help-orginizers-form textarea:focus {
      background-color: #F8F8F8;
      color: #6F7588;
 }
