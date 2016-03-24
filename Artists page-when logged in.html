@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>BUGvsFEATURE</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="fancyapps-fancyBox/source/jquery.fancybox.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="3.3.5_custom/styles.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="fancyapps-fancyBox/source/jquery.fancybox.pack.js"></script>
+        <script src="main.js"></script>
+        <meta name="viewport" content="width=1280" />
+    </head>
+
+    <body>
+        <div class="main-container">
+        <div class="header">
+            <div class="wrapper-header">
+                <a href="#">
+                <img class="logo-image" src="3.3.5_custom/images/logo.png" alt="Логотип">
+                <h2 class="logo-text">Bug <span>vs</span><br> feature</h2>
+                </a>
+
+            <!-- Main menu -->
+            <ul class="navigation">
+                <li><a href="#" class="lettering">Главная</a></li>
+                <li><a href="projects-page.html" class="lettering">Проекты</a></li>
+                <li><a href="Artists page.html" class="lettering">Художники</a></li>
+                <li class="dropdown contacts-dropdown">
+                    <button id="dLabel" class="lettering contacts-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Контакты
+                    </button>
+                    <ul class="dropdown-menu contacts-list block-3" aria-labelledby="dLabel">
+                        <li class="lettering-second">Организационные вопросы <br>+38 012 345 67 89 <br>info@bvsf.org</li>
+                        <li class="lettering-second">Технические вопросы <br>+38 012 345 67 89 <br>tech@bvsf.org</li>
+                        <li class="lettering-second">Вопросы сотрудничества <br>+38 012 345 67 89</li>
+                        <li class="lettering-second">Наши реквизиты  <br>2222 4444 7777 4444</li>
+                    </ul>
+                </li>
+
+                <li class="space">
+                   <a href="#" class="lettering"><i class="icon-060__life-buoy"></i>Помочь проекту</a>
+                </li>
+
+                <li>
+                    <img src="3.3.5_custom/images/Zahorodniuk.Nastya.jpg" alt="Анастасия Загороднюк">
+                    <span class="lettering">Анастасия Загороднюк</span>
+                    <i class="icon-bell"></i>
+                    <i class="icon-close"></i>
+                </li>
+            </ul>
+            <!-- End of main menu -->
+
+            </div> <!-- .wrapper -->
+        </div> <!-- .header -->
+
+
+        <div class="artists-container"> <!-- the main container -->
+
+            <h1 class="lettering">Знакомьтесь, <strong>наши художники!</strong></h1>
+
+            <div class="blocks-area clearfix">
+
+                <!--------------------- .artist-block 1 ------------------------->
+
+                <div class="artist-block">
+                        <img src="3.3.5_custom/images/Batogovsky.Artem.jpg" alt="Артём Батоговский">
+                        <h2 class="lettering">Артём Батоговский</h2>
+
+                        <ul class="contact-icons"> <!-- Icons block -->
+
+                            <!-- The first icon -->
+                            <li>
+                                <i id="phonenumber3" class="icon-telephone call"></i>
+                                <div class="phone" style="display: none;">+38 012 345 67 89</div>
+                            </li>
+
+                            <!-- The second icon -->
+                             <li>
+                                 <a href="#" data-toggle="modal" data-target="#modal"><i class="icon-mail"></i></a>
+                                 <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                     <button data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                                     <div class="modal-dialog modal-lg">
+                                         <div class="modal-content">
+                                              <div id="letter-to-organizers">
+                                                  <div class="writing-area">
+                                                      <form class="help-orginizers-form" method="post">
+                                                          <p>
+                                                              <label for="help-message" class="label">Написать организаторам</label>
+                                                              <textarea name="help-message" class="lettering-second" id="help-message"></textarea>
+                                                          </p>
+                                                          <p>
+                                                              <input type="submit" value="Отправить">
+                                                          </p>
+                                                      </form>
+                                                  </div> <!-- .writing-area -->
+                                              </div> <!-- #letter-to-organizers -->
+                                         </div> <!-- .modal-content -->
+                                     </div> <!-- .modal-dialog -->
+                                 </div> <!-- #modal -->
+                             </li>
+
+                             <!-- The third icon -->
+                              <li>
+                                 <a href="#"><i class="icon-vk"></i></a>
+                             </li>
+
+                             <!-- The fourth icon -->
+                              <li>
+                                 <a href="#"><i class="icon-facebook-2"></i></a>
+                             </li>
+
+                        </ul> <!-- End of icons block -->
+
+                        <p>Художественное образование получил в Париже, занимался в студии Сюиса, посещал мастерскую Глейра.<a class="lettering-second additional-information" data-toggle="modal" data-target="#modal1">>></a></p>
+
+                        <h3><a href="#"><span>Проекты</span> (12)</a></h3>
+
+                    </div> <!-- End of .artist-block 1-->
+
+                    <div id="modal1" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                        <button data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                        <div class="modal-dialog modal-lg" style="width: 700px;">
+                            <div class="modal-content" style="width: 700px;">
+                                <div id="artists-page-modal">
+                                    <img src="3.3.5_custom/images/Batogovsky.Artem.jpg" alt="Артём Батоговский">
+                                    <h2 class="lettering">Артём Батоговский</h2>
+
+                                        <p>
+                                            Художественное образование получил в Париже (с 1859), занимался в студии Сюиса, некоторое время посещал мастерскую художника академической ориентации Ш. Глейра. В Салоне внимательно присматривался к полотнам К. Коро, Т. Руссо, Ш. Добиньи. Важное значение имело знакомство с молодыми живописцами, ищущими новых путей в искусстве: Базилем, Писсарро, Дега, Сезанном, Ренуаром, Сислеем. В их кругу зародилось ядро нового живописного направления, получившего впоследствии название «импрессионизм» от названия картины Моне «Впечатление. Восход солнца» (1872, Музей Мармоттан, Париж; франц. impression — впечатление), которая экспонировалась в ателье фотографа Надара в 1874, на первой выставке импрессионистов. Клод Моне много работает на натуре, ему важно не просто запечатлеть пейзаж, бытовую сценку, а передать свежесть непосредственного впечатления от созерцания природы, где каждое мгновение что-то происходит, где окраска предметов непрерывно меняется в зависимости от освещения, от состояния атмосферы, погоды, от соседства с другими предметами, отбрасывающими цветные отблески — рефлексы. Чтобы воссоздать жизнь в ее непрестанных изменениях, художник работает под открытым небом, делая на пленэре не только этюды, но и завершая картины. В картине «Дамы в саду» (около 1865, Эрмитаж, Санкт-Петербург), залитой сияющим светом, белый цвет платья словно вбирает в себя все многоцветие природы — здесь и голубые блики, и зеленоватые, охристые, розоватые; столь же тонко разработан зеленый цвет листвы, травы.
+                                        </p>
+
+                                        <h3><a href="#"><span>Проекты</span> (12)</a></h3>
+
+                                </div> <!-- #artists-page-modal -->
+                            </div> <!-- .modal-content -->
+                        </div> <!-- .modal-dialog -->
+                    </div> <!-- #modal1 -->
+
+
+                 <!--------------------- .artist-block 2 ------------------------->
+                    <div class="artist-block">  <!-- .artist-block 2-->
+                    <img src="3.3.5_custom/images/Zahorodniuk.Nastya.jpg" alt="Анастасия Загороднюк">
+                    <h2 class="lettering">Анастасия Загороднюк</h2>
+
+                     <ul class="contact-icons"> <!-- Icons block -->
+
+                            <!-- The first icon -->
+                            <li>
+                                <i id="phonenumber4" class="icon-telephone call"></i>
+                                <div class="phone" style="display: none;">+38 012 345 67 89</div>
+                            </li>
+
+                            <!-- The second icon -->
+                             <li>
+                                 <a href="#" data-toggle="modal" data-target="#modal"><i class="icon-mail"></i></a>
+                                 <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                     <button data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                                     <div class="modal-dialog modal-lg">
+                                         <div class="modal-content">
+                                              <div id="letter-to-organizers">
+                                                  <div class="writing-area">
+                                                      <form class="help-orginizers-form"  method="post">
+                                                          <p>
+                                                              <label for="help-message"  class="label">Написать организаторам</label>
+                                                              <textarea name="help-message" class="lettering-second" id="help-message"></textarea>
+                                                          </p>
+                                                          <p>
+                                                              <input type="submit" value="Отправить">
+                                                          </p>
+                                                      </form>
+                                                  </div> <!-- .writing-area -->
+                                              </div> <!-- #letter-to-organizers -->
+                                         </div> <!-- .modal-content -->
+                                     </div> <!-- .modal-dialog -->
+                                 </div> <!-- #modal -->
+                             </li>
+
+                             <!-- The third icon -->
+                              <li>
+                                 <a href="#"><i class="icon-vk"></i></a>
+                             </li>
+
+                             <!-- The fourth icon -->
+                              <li>
+                                 <a href="#"><i class="icon-facebook-2"></i></a>
+                             </li>
+
+                        </ul> <!-- End of icons block -->
+
+                        <p>Изучала живопись в различных высших школах искусств в Мэриленде, Нью-Йорке, Мехико...<a class="lettering-second additional-information" data-toggle="modal" data-target="#modal2">>></a></p>
+                        <h3><a href="#"><span>Проекты</span> (12)</a></h3>
+
+                    </div> <!-- End of .artist-block 2-->
+                    <div id="modal2" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                        <button data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                        <div class="modal-dialog modal-lg" style="width: 700px;">
+                            <div class="modal-content" style="width: 700px;">
+                                <div id="artists-page-modal">
+                                    <img src="3.3.5_custom/images/Zahorodniuk.Nastya.jpg" alt="Анастасия Загороднюк">
+                                    <h2 class="lettering">Анастасия Загороднюк</h2>
+
+                                        <p>Элен Гамильтон изучала живопись в различных высших школах искусств — в Институте искусств Мэриленда, под руководством Роберта Бракмана; на курсах Студенческой художественной лиги в Нью-Йорке; в Национальном политехническом институте Мехико под руководством Диего Риверы; во флорентийской Академии изящных искусств. Писала свои картины как в реалистической манере, так и в абстрактной. Находилась под творческим влиянием известного французского искусствоведа Мишеля Тапи, а также мексиканского художника Хосе Ороско.
+                                        </p>
+                                        <p>Участник международных художественных выставок — в США, Мексике, Южной Азии, Японии и в различных странах Европы; также успешно проводила персональные выставки своих работ. Дважды участвовала в Венецианских биеннале, в 1968 году завоевала 1-й приз на биеннале в Ментоне. В последний свой творческий период обратилась к «живописи действия» (action painting).
+                                        </p>
+                                        <p>Элен Гамильтон известна также как альпинистка высшего класса, более 30 лет посвятившая восхождениям на вершины Гималаев (участница K2-экспедиций). В 1959 году она впервые посещает Пакистан с целью организации здесь своей выставки, и получает от министра иностранных дел страны разрешение на проведение первой горной К2-экспедиции. Она послужила художнице для реализации её творческих фантазий и послужила материалом для её первой полностью абстрактной картины Burst Beyond the Image. В последующие годы Гамильтон совершает ещё восемь восхождений в Гималаях к различным их вершинам. Неоднократно посещала Сикким и имела дружеские отношения с его правителем Таши Намгьялом и членами его королевской семьи. В Сиккиме художница познакомилась и открыла для себя буддийское учение.
+                                        </p>
+
+                                        <h3><a href="#"><span>Проекты</span> (12)</a></h3>
+
+                                </div> <!-- #artists-page-modal -->
+                            </div> <!-- .modal-content -->
+                        </div> <!-- .modal-dialog -->
+                    </div> <!-- #modal1 -->
+
+
+                <!--------------------- .artist-block 3 ------------------------->
+                    <div class="artist-block">
+                        <img src="3.3.5_custom/images/Nataliya.Dasyuk.jpg" alt="Наталья Дасюк">
+                        <h2 class="lettering">Наталья Дасюк</h2>
+
+                         <ul class="contact-icons"> <!-- Icons block -->
+
+                            <!-- The first icon -->
+                            <li>
+                                <i id="phonenumber5" class="icon-telephone call"></i>
+                                <div class="phone" style="display: none;">+38 012 345 67 89</div>
+                            </li>
+
+                            <!-- The second icon -->
+                             <li>
+                                 <a href="#" data-toggle="modal" data-target="#modal"><i class="icon-mail"></i></a>
+                                 <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                     <button data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                                     <div class="modal-dialog modal-lg">
+                                         <div class="modal-content">
+                                              <div id="letter-to-organizers">
+                                                  <div class="writing-area">
+                                                      <form class="help-orginizers-form"  method="post">
+                                                          <p>
+                                                              <label for="help-message" class="label">Написать организаторам</label>
+                                                              <textarea name="help-message" class="lettering-second" id="help-message"></textarea>
+                                                          </p>
+                                                          <p>
+                                                              <input type="submit" value="Отправить">
+                                                          </p>
+                                                      </form>
+                                                  </div> <!-- .writing-area -->
+                                              </div> <!-- #letter-to-organizers -->
+                                         </div> <!-- .modal-content -->
+                                     </div> <!-- .modal-dialog -->
+                                 </div> <!-- #modal -->
+                             </li>
+
+                             <!-- The third icon -->
+                              <li>
+                                 <a href="#"><i class="icon-vk"></i></a>
+                             </li>
+
+                             <!-- The fourth icon -->
+                              <li>
+                                 <a href="#"><i class="icon-facebook-2"></i></a>
+                             </li>
+
+                        </ul> <!-- End of icons block -->
+
+                        <p>Рисует преимущественно портреты масляными красками, а также акварели.</p>
+
+                        <h3><a href="#"><span>Проекты</span> (12)</a></h3>
+
+                    </div> <!-- End of .artist-block 3-->
+
+
+                <!--------------------- .artist-block 4 ------------------------->
+                    <div class="artist-block">
+                        <img src="3.3.5_custom/images/Alyona.Goroh.jpg" alt="Алёна Горох">
+                        <h2 class="lettering">Алёна Горох</h2>
+
+                         <ul class="contact-icons"> <!-- Icons block -->
+
+                            <!-- The first icon -->
+                            <li>
+                                <i id="phonenumber6" class="icon-telephone call"></i>
+                                <div class="phone" style="display: none;">+38 012 345 67 89</div>
+                            </li>
+
+                            <!-- The second icon -->
+                             <li>
+                                 <a href="#" data-toggle="modal" data-target="#modal"><i class="icon-mail"></i></a>
+                                 <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                     <button data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                                     <div class="modal-dialog modal-lg">
+                                         <div class="modal-content">
+                                              <div id="letter-to-organizers">
+                                                  <div class="writing-area">
+                                                      <form class="help-orginizers-form"  method="post">
+                                                          <p>
+                                                              <label for="help-message" class="label">Написать организаторам</label>
+                                                              <textarea name="help-message" class="lettering-second" id="help-message"></textarea>
+                                                          </p>
+                                                          <p>
+                                                              <input type="submit" value="Отправить">
+                                                          </p>
+                                                      </form>
+                                                  </div> <!-- .writing-area -->
+                                              </div> <!-- #letter-to-organizers -->
+                                         </div> <!-- .modal-content -->
+                                     </div> <!-- .modal-dialog -->
+                                 </div> <!-- #modal -->
+                             </li>
+
+                             <!-- The third icon -->
+                              <li>
+                                 <a href="#"><i class="icon-vk"></i></a>
+                             </li>
+
+                             <!-- The fourth icon -->
+                              <li>
+                                 <a href="#"><i class="icon-facebook-2"></i></a>
+                             </li>
+
+                        </ul> <!-- End of icons block -->
+
+                        <p>Cтала известна благодаря экспрессивным работам, основанным на полароидных снимках.</p>
+                        <h3><a href="#"><span>Проекты</span> (7)</a></h3>
+
+                    </div> <!-- End of .artist-block 4-->
+
+
+                <!--------------------- .artist-block 5 ------------------------->
+                    <div class="artist-block">
+                        <img src="3.3.5_custom/images/Ekaterina.Mihalyova.jpg" alt="Екатерина Михалёва">
+                        <h2 class="lettering">Екатерина Михалёва</h2>
+
+                         <ul class="contact-icons"> <!-- Icons block -->
+
+                            <!-- The first icon -->
+                            <li>
+                                <i id="phonenumber7" class="icon-telephone call"></i>
+                                <div class="phone" style="display: none;">+38 012 345 67 89</div>
+                            </li>
+
+                            <!-- The second icon -->
+                             <li>
+                                 <a href="#" data-toggle="modal" data-target="#modal"><i class="icon-mail"></i></a>
+                                 <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                     <button data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                                     <div class="modal-dialog modal-lg">
+                                         <div class="modal-content">
+                                              <div id="letter-to-organizers">
+                                                  <div class="writing-area">
+                                                      <form class="help-orginizers-form"  method="post">
+                                                          <p>
+                                                              <label for="help-message" class="label">Написать организаторам</label>
+                                                              <textarea name="help-message" class="lettering-second" id="help-message"></textarea>
+                                                          </p>
+                                                          <p>
+                                                              <input type="submit" value="Отправить">
+                                                          </p>
+                                                      </form>
+                                                  </div> <!-- .writing-area -->
+                                              </div> <!-- #letter-to-organizers -->
+                                         </div> <!-- .modal-content -->
+                                     </div> <!-- .modal-dialog -->
+                                 </div> <!-- #modal -->
+                             </li>
+
+                             <!-- The third icon -->
+                              <li>
+                                 <a href="#"><i class="icon-vk"></i></a>
+                             </li>
+
+                             <!-- The fourth icon -->
+                              <li>
+                                 <a href="#"><i class="icon-facebook-2"></i></a>
+                             </li>
+
+                        </ul> <!-- End of icons block -->
+
+                        <p>Несмотря на возражения семьи, изучала живопись в Академии искусств, затем училась самостоятельно.</p>
+                        <h3><a href="#"><span>Проекты</span> (7)</a></h3>
+
+                    </div> <!-- End of .artist-block 5-->
+
+
+                <!--------------------- .artist-block 6 ------------------------->
+                    <div class="artist-block">
+                        <img src="3.3.5_custom/images/Alina.Neizhberg.jpg" alt="Алина Нейенбург">
+                        <h2 class="lettering">Алина Нейенбург</h2>
+
+                         <ul class="contact-icons"> <!-- Icons block -->
+
+                            <!-- The first icon -->
+                            <li>
+                                <i id="phonenumber8" class="icon-telephone call"></i>
+                                <div class="phone" style="display: none;">+38 012 345 67 89</div>
+                            </li>
+
+                            <!-- The second icon -->
+                             <li>
+                                 <a href="#" data-toggle="modal" data-target="#modal"><i class="icon-mail"></i></a>
+                                 <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                     <button data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                                     <div class="modal-dialog modal-lg">
+                                         <div class="modal-content">
+                                              <div id="letter-to-organizers">
+                                                  <div class="writing-area">
+                                                      <form class="help-orginizers-form"  method="post">
+                                                          <p>
+                                                              <label for="help-message" class="label">Написать организаторам</label>
+                                                              <textarea name="help-message" class="lettering-second" id="help-message"></textarea>
+                                                          </p>
+                                                          <p>
+                                                              <input type="submit" value="Отправить">
+                                                          </p>
+                                                      </form>
+                                                  </div> <!-- .writing-area -->
+                                              </div> <!-- #letter-to-organizers -->
+                                         </div> <!-- .modal-content -->
+                                     </div> <!-- .modal-dialog -->
+                                 </div> <!-- #modal -->
+                             </li>
+
+                             <!-- The third icon -->
+                              <li>
+                                 <a href="#"><i class="icon-vk"></i></a>
+                             </li>
+
+                             <!-- The fourth icon -->
+                              <li>
+                                 <a href="#"><i class="icon-facebook-2"></i></a>
+                             </li>
+
+                        </ul> <!-- End of icons block -->
+
+                        <p>В её работах есть влияние восточноевропейских росписей и авангардной живописи.</p>
+                        <h3><a href="#"><span>Проекты</span> (7)</a></h3>
+
+                    </div> <!-- End of .artist-block 6-->
+
+
+                <!--------------------- .artist-block 7 ------------------------->
+                    <div class="artist-block">
+                        <img src="3.3.5_custom/images/Yana.Ivanova.jpg" alt="Яна Иванова">
+                        <h2 class="lettering">Яна Иванова</h2>
+
+                         <ul class="contact-icons"> <!-- Icons block -->
+
+                            <!-- The first icon -->
+                            <li>
+                                <i id="phonenumber9" class="icon-telephone call"></i>
+                                <div class="phone" style="display: none;">+38 012 345 67 89</div>
+                            </li>
+
+                            <!-- The second icon -->
+                             <li>
+                                 <a href="#" data-toggle="modal" data-target="#modal"><i class="icon-mail"></i></a>
+                                 <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                     <button data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                                     <div class="modal-dialog modal-lg">
+                                         <div class="modal-content">
+                                              <div id="letter-to-organizers">
+                                                  <div class="writing-area">
+                                                      <form class="help-orginizers-form"  method="post">
+                                                          <p>
+                                                              <label for="help-message" class="label">Написать организаторам</label>
+                                                              <textarea name="help-message" class="lettering-second" id="help-message"></textarea>
+                                                          </p>
+                                                          <p>
+                                                              <input type="submit" value="Отправить">
+                                                          </p>
+                                                      </form>
+                                                  </div> <!-- .writing-area -->
+                                              </div> <!-- #letter-to-organizers -->
+                                         </div> <!-- .modal-content -->
+                                     </div> <!-- .modal-dialog -->
+                                 </div> <!-- #modal -->
+                             </li>
+
+                             <!-- The third icon -->
+                              <li>
+                                 <a href="#"><i class="icon-vk"></i></a>
+                             </li>
+
+                             <!-- The fourth icon -->
+                              <li>
+                                 <a href="#"><i class="icon-facebook-2"></i></a>
+                             </li>
+
+                        </ul> <!-- End of icons block -->
+
+                        <p>Её узнаваемый стиль характеризуется акцентом на линии, сетки, а также полями тонкого цвета.</p>
+                        <h3><a href="#"><span>Проекты</span> (10)</a></h3>
+
+                    </div> <!-- End of .artist-block 7-->
+
+
+                <!--------------------- .artist-block 8 ------------------------->
+                    <div class="artist-block">
+                        <img src="3.3.5_custom/images/Sasha.Rusanovich.jpg" alt="Александра Русанович">
+                        <h2 class="lettering">Александра Русанович</h2>
+
+                         <ul class="contact-icons"> <!-- Icons block -->
+
+                            <!-- The first icon -->
+                            <li>
+                                <i id="phonenumber10" class="icon-telephone call"></i>
+                                <div class="phone" style="display: none;">+38 012 345 67 89</div>
+                            </li>
+
+                            <!-- The second icon -->
+                             <li>
+                                 <a href="#" data-toggle="modal" data-target="#modal"><i class="icon-mail"></i></a>
+                                 <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                     <button data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                                     <div class="modal-dialog modal-lg">
+                                         <div class="modal-content">
+                                              <div id="letter-to-organizers">
+                                                  <div class="writing-area">
+                                                      <form class="help-orginizers-form"  method="post">
+                                                          <p>
+                                                              <label for="help-message" class="label">Написать организаторам</label>
+                                                              <textarea name="help-message" class="lettering-second" id="help-message"></textarea>
+                                                          </p>
+                                                          <p>
+                                                              <input type="submit" value="Отправить">
+                                                          </p>
+                                                      </form>
+                                                  </div> <!-- .writing-area -->
+                                              </div> <!-- #letter-to-organizers -->
+                                         </div> <!-- .modal-content -->
+                                     </div> <!-- .modal-dialog -->
+                                 </div> <!-- #modal -->
+                             </li>
+
+                             <!-- The third icon -->
+                              <li>
+                                 <a href="#"><i class="icon-vk"></i></a>
+                             </li>
+
+                             <!-- The fourth icon -->
+                              <li>
+                                 <a href="#"><i class="icon-facebook-2"></i></a>
+                             </li>
+
+                        </ul> <!-- End of icons block -->
+
+                        <p>Здесь должен быть текст о художнике. Здесь должен быть текст. Здесь должен быть текст о художнике.</p>
+                        <h3><a href="#"><span>Проекты</span> (10)</a></h3>
+
+                    </div> <!-- End of .artist-block 8-->
+
+
+                <!--------------------- .artist-block 9 ------------------------->
+                    <div class="artist-block">
+                        <img src="3.3.5_custom/images/Ivan.Chervyakov.jpg" alt="Иван Червяков">
+                        <h2 class="lettering">Иван Червяков</h2>
+
+                         <ul class="contact-icons"> <!-- Icons block -->
+
+                            <!-- The first icon -->
+                            <li>
+                                <i id="phonenumber11" class="icon-telephone call"></i>
+                                <div class="phone" style="display: none;">+38 012 345 67 89</div>
+                            </li>
+
+                            <!-- The second icon -->
+                             <li>
+                                 <a href="#" data-toggle="modal" data-target="#modal"><i class="icon-mail"></i></a>
+                                 <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                     <button data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                                     <div class="modal-dialog modal-lg">
+                                         <div class="modal-content">
+                                              <div id="letter-to-organizers">
+                                                  <div class="writing-area">
+                                                      <form class="help-orginizers-form"  method="post">
+                                                          <p>
+                                                              <label for="help-message" class="label">Написать организаторам</label>
+                                                              <textarea name="help-message" class="lettering-second" id="help-message"></textarea>
+                                                          </p>
+                                                          <p>
+                                                              <input type="submit" value="Отправить">
+                                                          </p>
+                                                      </form>
+                                                  </div> <!-- .writing-area -->
+                                              </div> <!-- #letter-to-organizers -->
+                                         </div> <!-- .modal-content -->
+                                     </div> <!-- .modal-dialog -->
+                                 </div> <!-- #modal -->
+                             </li>
+
+                             <!-- The third icon -->
+                              <li>
+                                 <a href="#"><i class="icon-vk"></i></a>
+                             </li>
+
+                             <!-- The fourth icon -->
+                              <li>
+                                 <a href="#"><i class="icon-facebook-2"></i></a>
+                             </li>
+
+                        </ul> <!-- End of icons block -->
+
+                        <p>Здесь должен быть текст о художнике. Здесь должен быть текст. Здесь должен быть текст о художнике.</p>
+                        <h3><a href="#"><span>Проекты</span> (10)</a></h3>
+
+                    </div> <!-- End of .artist-block 9-->
+
+
+                <!--------------------- .artist-block 10 ------------------------->
+                    <div class="artist-block">
+                        <img src="3.3.5_custom/images/Marianna.Shatkovskaya.jpg" alt="Марианна Шатковская">
+                        <h2 class="lettering">Марианна Шатковская</h2>
+
+                         <ul class="contact-icons"> <!-- Icons block -->
+
+                            <!-- The first icon -->
+                            <li>
+                                <i id="phonenumber12" class="icon-telephone call"></i>
+                                <div class="phone" style="display: none;">+38 012 345 67 89</div>
+                            </li>
+
+                            <!-- The second icon -->
+                             <li>
+                                 <a href="#" data-toggle="modal" data-target="#modal"><i class="icon-mail"></i></a>
+                                 <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                     <button data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                                     <div class="modal-dialog modal-lg">
+                                         <div class="modal-content">
+                                              <div id="letter-to-organizers">
+                                                  <div class="writing-area">
+                                                      <form class="help-orginizers-form"  method="post">
+                                                          <p>
+                                                              <label for="help-message" class="label">Написать организаторам</label>
+                                                              <textarea name="help-message" class="lettering-second" id="help-message"></textarea>
+                                                          </p>
+                                                          <p>
+                                                              <input type="submit" value="Отправить">
+                                                          </p>
+                                                      </form>
+                                                  </div> <!-- .writing-area -->
+                                              </div> <!-- #letter-to-organizers -->
+                                         </div> <!-- .modal-content -->
+                                     </div> <!-- .modal-dialog -->
+                                 </div> <!-- #modal -->
+                             </li>
+
+                             <!-- The third icon -->
+                              <li>
+                                 <a href="#"><i class="icon-vk"></i></a>
+                             </li>
+
+                             <!-- The fourth icon -->
+                              <li>
+                                 <a href="#"><i class="icon-facebook-2"></i></a>
+                             </li>
+
+                        </ul> <!-- End of icons block -->
+
+                        <p>Здесь должен быть текст о художнике. Здесь должен быть текст. Здесь должен быть текст о художнике.</p>
+                        <h3><a href="#"><span>Проекты</span> (5)</a></h3>
+
+                    </div> <!-- End of .artist-block 10-->
+
+            </div> <!-- .blocks-area -->
+
+        </div> <!-- .artists-container -->
+
+        <div class="push"></div>
+        </div> <!-- .main-container -->
+
+        <!-- Footer -->
+        <div id="footer">
+            <div class="wrapper-footer">
+
+                <div class="footer-logo">
+                    <a href="#">
+                    <h2>Bug <span>vs</span><br> feature</span></h2>
+                    </a>
+                </div>
+                <div id="sitemap">
+                    <a href="#">Главная</a>
+                    <a href="#">Проекты</a>
+                    <a href="#">Художники</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Помочь проекту</a>
+                </div>
+
+                <div id="social">
+                    <a href="#" class="social-icon vkontakte"></a>
+                    <a href="#" class="social-icon facebook"></a>
+                    <a href="#" class="social-icon twitter"></a>
+                    <a href="#" class="social-icon odnoklassniki"></a>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2015 BVSF.ORG</p>
+
+                    <span>Designed by</span>
+
+                    <a href="#" class="traineeship">
+                        <img class="traineeship-one" src="3.3.5_custom/images/traineeship logo normal.png">
+                        <img class="traineeship-two" src="3.3.5_custom/images/traineeship logo hover.png">
+                    </a>
+
+                    <a href="#" class="team-logo">
+                        <img class="team-logo-one" src="3.3.5_custom/images/team logo normal.png">
+                        <img class="team-logo-two" src="3.3.5_custom/images/team logo hover.png">
+                    </a>
+
+                </div> <!-- .footer-bottom -->
+
+            </div> <!-- .wrapper-footer -->
+        </div> <!-- #footer -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("a.fancyimage").fancybox();
+  });
+</script>
+    </body>
+
+</html>
+
