@@ -3008,11 +3008,13 @@ textarea#help-address:focus:-moz-placeholder {
 }
 
 .bug-add-notification {
-    position: relative;
+    position: absolute;
     width: 276px;
     overflow: hidden;
     background-color: #088CFF;
-    border-radius: 1px;
+    border-radius: 4px;
+    right: 100px;
+    top: 10px;
 }
 
 .bug-added-sign {
@@ -3031,7 +3033,7 @@ a.bug-added-sign i.icon-choose:before {
     font-size: 50px;
     color: #FFFFFF;
     position: absolute;
-    top: -7.5px;
+    top: -14px;
     left: -5px;
 }
 
