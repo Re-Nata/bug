@@ -3007,6 +3007,40 @@ textarea#help-address:focus:-moz-placeholder {
     opacity: 0;
 }
 
+.bug-add-notification {
+    position: relative;
+    width: 276px;
+    overflow: hidden;
+    background-color: #088CFF;
+    border-radius: 1px;
+}
+
+.bug-added-sign {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    border: 2px solid #FFFFFF;
+    background-color: inherit;
+    left: 116px;
+    top: 15px;
+}
+
+a.bug-added-sign i.icon-choose:before {
+    content: "\e80b";
+    font-size: 50px;
+    color: #FFFFFF;
+    position: absolute;
+    top: -7.5px;
+    left: -5px;
+}
+
+.bug-add-notification p {
+    margin-top: 80px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 /* notification: what to do to continue */
 #projects-page-wrapper #notification,
 #carousel-calendar #notification,
