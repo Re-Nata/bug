@@ -2537,11 +2537,19 @@ a.i-go-button i.icon-choose:before {
 }
 
 /* Projects page modal: contacts of organizators ======= */
-#projects-page-wrapper #modal1,
+#projects-page-wrapper #modal,
 #projects-page-wrapper #modal2,
+#projects-page-wrapper #modal5,
 #projects-page-wrapper-1 #modal3,
-#projects-page-wrapper-1 #modal4 {
+#projects-page-wrapper-1 #modal4,
+#modal6 {
     background: rgba(0,0,0,0.7);
+    width: 100%;
+}
+
+#modal6.modal.fade.bs-example-modal-lg.in {
+    position: fixed;
+    left: 0;
 }
 
 #projects-page-wrapper .modal-dialog,
@@ -2744,7 +2752,6 @@ a.i-go-button i.icon-choose:before {
 }
 
 /* Additional blocks ============================= */
-
 /*to write to organizers */
 #letter-to-organizers,
 #offer,
@@ -3001,64 +3008,87 @@ textarea#help-address:focus:-moz-placeholder {
 }
 
 /* notification: what to do to continue */
-#notification {
+#projects-page-wrapper #notification,
+#carousel-calendar #notification,
+#modal6 #notification {
     width: 254px;
     height: 170px;
     background: #088CFF;
-    border-radius: 1px;
-    margin: 0;
+    border-radius: 4px;
+    margin: 0 auto;
     padding: 0;
+    z-index: 9000;
 }
 
-.caution-message {
+#notification .caution-message,
+#modal6 #notification .caution-message {
     position: relative;
 }
 
-.caution-message i.icon-caution:before {
+#notification .caution-message i.icon-caution:before,
+#modal6 #notification .caution-message i.icon-caution:before {
     content: "\e80a";
     font-size: 100px;
     color: #FFFFFF;
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 35px;
     bottom: 0;
-    margin-top: -10px;
 }
 
-.caution-message p,
-a.caution-sign-in {
+#modal6 #notification .caution-message i.icon-caution:before {
+    top: -20px;
+    left: 0;
+}
+
+#notification .caution-message p,
+#notification a.caution-sign-in,
+#modal6 #notification .caution-message p,
+#modal6 #notification a.caution-sign-in {
     color: #FFFFFF;
     text-align: center;
     font-size: 14px;
     line-height: 16px;
 }
 
-.caution-message p {
+#notification .caution-message p,
+#modal6 #notification .caution-message p {
     padding-top: 82px;
     font-weight: 400;
 }
 
-.caution-sign-in {
+#notification .caution-sign-in,
+#modal6 #notification .caution-sign-in {
     width: 144px;
     height: 30px;
     background: inherit;
     border: 2px solid #FFFFFF;
     transition: background 0.5s;
     position: absolute;
-    margin-left: 55px;
+    left: 55px;
+    top: 120px;
     border-radius: 2px;
-    margin-top: 5px;
 }
 
-.caution-sign-in:hover,
-.caution-sign-in:focus {
+#notification .caution-sign-in:hover,
+#notification .caution-sign-in:focus,
+#modal6 #notification .caution-sign-in:hover,
+#modal6 #notification .caution-sign-in:focus {
     background: #0A74D0;
 }
 
-a.caution-sign-in {
+#notification a.caution-sign-in,
+#modal6 #notification a.caution-sign-in {
     font-weight: 700;
     padding-top: 6px;
+}
+
+#modal5 .modal-dialog,
+#modal5 .modal-content,
+#modal6 .modal-dialog,
+#modal6 .modal-content {
+    width: 254px;
 }
 
 
