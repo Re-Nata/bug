@@ -16,15 +16,32 @@ window.onload = function() {
     event.preventDefault();
     $('div#offer').show(); });
 
-    $('body').on('click', '#send_bug', function(event) {
-    event.preventDefault();
-    // send data here
-    $('div#offer').hide(); });
+    $('body').on('click', '#sendbug', function(event) {
+        event.preventDefault();
+        // send form data here
+        //
+        $('div#offer').hide();
+        $('div#bug-add-notification').show('slow');
+        setTimeout(function() {
+            $('div#bug-add-notification').hide('slow');
+        }, 5000);
+     });
 
     //for carousel on ongoing page
     $('.thumbs').delegate('img','click', function() {
         $('.largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
-        //$('#description').html($(this).attr('alt'));
+    });
+
+    $(":file").change(function () {
+        element = this;
+        if (this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = (function(evt){
+                $(element.previousElementSibling).attr('src', evt.target.result);
+                $(element.previousElementSibling).show();
+            });
+            reader.readAsDataURL(this.files[0]);
+        }
     });
 
 };
