@@ -138,6 +138,7 @@ a:active {
     display: inline-block;
     list-style: none;
     padding-right: 25px;
+    margin-top: 0;
 }
 
 .navigation a {
@@ -384,7 +385,7 @@ textarea#password:focus:-moz-placeholder {
     padding-top: 10px;
 }
 
-.options li a {
+.options li:last-child a {
     padding-left: 21px;
     padding-right: 0;
     color: #3399FF;
@@ -720,7 +721,6 @@ a.upbutton i.icon-plus:before {
 }
 
 ul.dropdown-menu {
-    margin-top: -2.5px;
     padding: 0;
     box-shadow: none;
     border-radius: 2px;
