@@ -27,6 +27,7 @@ window.onload = function() {
         }, 5000);
      });
 
+
     //for carousel on ongoing page
     $('.thumbs').delegate('img','click', function() {
         $('.largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
@@ -141,4 +142,50 @@ $(".fancybox").fancybox({
 $('#thumbs').delegate('img','click', function(){
     $('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
     $('#description').html($(this).attr('alt'));
+});
+
+//for add-bug button when person is not logged-in
+$(document).ready(function() {
+        $('a#upbutton').click( function(event){
+            event.preventDefault();
+        $('#overlay').fadeIn(
+            function(){
+                $('#notification2')
+                .css('display', 'block')
+                .animate({opacity: 1, top: '50%'}, 200);
+        });
+});
+
+$('#overlay').click( function(){
+    $('#notification2')
+    .animate({opacity: 0, top: '45%'}, 200,
+    function(){
+        $(this).css('display', 'none');
+        $('#overlay').fadeOut(400);
+    }
+        );
+    });
+});
+
+//for I will go (button) when person is not logged-in: schedule-tab
+$(document).ready(function() {
+        $('a#go-button').click( function(event){
+            event.preventDefault();
+        $('#background').fadeIn(
+            function(){
+                $('#notification3')
+                .css('display', 'block')
+                .animate({opacity: 1, top: '40%'}, 200);
+        });
+});
+
+$('#background').click( function(){
+    $('#notification3')
+    .animate({opacity: 0, top: '40%'}, 200,
+    function(){
+        $(this).css('display', 'none');
+        $('#background').fadeOut(400);
+    }
+        );
+    });
 });

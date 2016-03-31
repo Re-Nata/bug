@@ -1726,6 +1726,7 @@ li.final-number {
 .plan a.i-go-button {
     font-size: 12px;
     margin-bottom: 3.5px;
+    cursor: pointer;
 }
 
 .plan a.i-go-button i.icon-choose:before {
@@ -3387,7 +3388,9 @@ a.bug-added-sign i.icon-choose:before {
 /* notification: what to do to continue */
 #projects-page-wrapper #notification,
 #carousel-calendar #notification,
-#modal6 #notification {
+#notification,
+#notification2,
+#notification3 {
     width: 254px;
     height: 170px;
     background: #088CFF;
@@ -3397,13 +3400,24 @@ a.bug-added-sign i.icon-choose:before {
     z-index: 9000;
 }
 
-#notification .caution-message,
-#modal6 #notification .caution-message {
+#notification2 {
+    position: absolute;
+    right: 40px;
+}
+
+#notification3 {
+    position: fixed;
+    top: 45%;
+    left: 45%;
+}
+
+#notification .caution-message {
     position: relative;
 }
 
 #notification .caution-message i.icon-caution:before,
-#modal6 #notification .caution-message i.icon-caution:before {
+#notification2 .caution-message i.icon-caution:before,
+#notification3 .caution-message i.icon-caution:before {
     content: "\e80a";
     font-size: 100px;
     color: #FFFFFF;
@@ -3414,35 +3428,58 @@ a.bug-added-sign i.icon-choose:before {
     bottom: 0;
 }
 
-#modal6 #notification .caution-message i.icon-caution:before {
-    top: -20px;
+#notification2 .caution-message i.icon-caution:before {
+    margin-top: -27px;
+    top: 0;
+}
+
+#notification3 .caution-message i.icon-caution:before {
+    top: -25px;
     left: 0;
 }
 
 #notification .caution-message p,
 #notification a.caution-sign-in,
-#modal6 #notification .caution-message p,
-#modal6 #notification a.caution-sign-in {
+#notification2 .caution-message p,
+#notification3 a.caution-sign-in,
+#notification3 .caution-message p,
+#notification2 a.caution-sign-in {
     color: #FFFFFF;
     text-align: center;
     font-size: 14px;
     line-height: 16px;
 }
 
-#modal6 #notification .caution-message p {
+#notification a.caution-sign-in,
+#notification2 a.caution-sign-in,
+#notification3 a.caution-sign-in {
+    font-weight: 700;
+    padding-top: 6px;
+}
+
+#notification3 .caution-message p {
     font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
 }
 
 #notification .caution-message p,
-#modal6 #notification .caution-message p {
-    padding-top: 82px;
+#notification3 .caution-message p {
+    padding-top: 85px;
     font-weight: 400;
 }
 
+#notification3 .caution-message p {
+    width: 100%;
+}
+
+#notification2 .caution-message p {
+    padding-top: 70px;
+}
+
 #notification .caution-sign-in,
-#modal6 #notification .caution-sign-in {
+#notification2 .caution-sign-in,
+#notification3 .caution-sign-in {
     width: 144px;
     height: 30px;
     background: inherit;
@@ -3456,20 +3493,33 @@ a.bug-added-sign i.icon-choose:before {
 
 #notification .caution-sign-in:hover,
 #notification .caution-sign-in:focus,
-#modal6 #notification .caution-sign-in:hover,
-#modal6 #notification .caution-sign-in:focus {
+#notification2 .caution-sign-in:hover,
+#notification2 .caution-sign-in:focus,
+#notification3 .caution-sign-in:hover,
+#notification3 .caution-sign-in:focus {
     background: #0A74D0;
 }
 
-#notification a.caution-sign-in,
-#modal6 #notification a.caution-sign-in {
-    font-weight: 700;
-    padding-top: 6px;
+#modal5 .modal-dialog,
+#modal5 .modal-content {
+    width: 254px;
+    border: none;
 }
 
-#modal5 .modal-dialog,
-#modal5 .modal-content,
-#modal6 .modal-dialog,
-#modal6 .modal-content {
-    width: 254px;
+#overlay,
+#background {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+#background {
+    z-index: 10;
+    opacity: 0.6;
+    background-color: #000000;
 }
