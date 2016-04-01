@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    min-width: 860px;
+    max-width: 860px;
+    height: 100%;
+    background-color: #F4F4F6;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "fontello";
+    src: url("fontello/font/fontello.eot?68946226");
+    src: url("fontello/font/fontello.eot?68946226#iefix") format("embedded-opentype"),
+    url("fontello/font/fontello.woff?68946226") format("woff"),
+    url("fontello/font/fontello.ttf?68946226") format("truetype"),
+    url("fontello/font/fontello.svg?68946226#fontello") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+}
+
+.lettering-second {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.lettering {
+    font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #535865;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.calendar-notifications {
+    width: 254px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border: 1px solid #C1C5CD;
+    box-shadow: 0px 1px 7px -1px rgba(111, 117, 136, 0.7);
+}
+
+.event-notification {
+    position: relative;
+    width: inherit;
+    height: 80px;
+    border-top: 1px solid #C1C5CD;
+    margin-bottom: 17px;
+}
+
+.event-notification ul {
+    float: left;
+    margin: 18px 12px 0 5px;
+    padding: 0;
+    list-style: none;
+    color: #535865;
+}
+
+.event-notification li:first-child {
+    font-size: 24px;
+    padding-bottom: 7px;
+    padding-left: 8px;
+}
+
+.event-notification li:last-child {
+    font-size: 14px;
+    padding-left: 9px;
+    margin-top: -3px;
+}
+
+.event-notification li:first-child,
+.event-notification li:last-child {
+    font-weight: 700;
+    line-height: 14px;
+    color: #535865;
+}
+
+.event-notification h2 {
+    float: left;
+    color: #088CFF;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: none;
+    margin-top: 15px;
+}
+
+span.week-day {
+    text-transform: uppercase;
+    color: #535865;
+    float: left;
+    margin-top: 36px;
+    margin-left: -51px;
+    font-size: 14px;
+}
+
+.event-notification img {
+    width: 31px;
+    height: 31px;
+    margin-top: 28px;
+    margin-left: -27px;
+    float: left;
+}
+
+.event-notification span,
+.event-notification p {
+    color: #535865;
+    float: left;
+}
+
+.event-notification span {
+    margin-top: 36px;
+}
+
+.event-notification p {
+    position: absolute;
+    left: 52px;
+    top: 47px;
+}
