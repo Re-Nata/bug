@@ -3396,7 +3396,7 @@ textarea#help-address:focus:-moz-placeholder {
     top: 15px;
 }
 
-a.bug-added-sign i.icon-choose:before {
+span.bug-added-sign i.icon-choose:before {
     content: "\e80b";
     font-size: 50px;
     color: #FFFFFF;
