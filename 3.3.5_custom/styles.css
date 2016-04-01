@@ -581,9 +581,7 @@ ul.projects-navigation {
     width: 45px;
     height: 45px;
     outline: none;
-    position: absolute;
-    right: 0;
-    margin-right: 210px;
+    float: right;
     transition: background 0.5s;
     box-shadow: 0px 1px 7px -1px rgba(111, 117, 136, 1);
 }
