@@ -628,7 +628,7 @@ a.upbutton i.icon-plus:before {
     }
 
     .block-2:after {
-        margin-top: -190px;
+        margin-top: -198px;
     }
 
     .options {
@@ -1318,6 +1318,7 @@ a.fancybox {
     width: 67px;
     height: 96px;
     visibility: visible;
+    top: 30%;
 }
 
 #modal1.fade.bs-example-modal-lg i.icon-close:before {
@@ -1906,6 +1907,7 @@ p.project-date {
     height: 61px;
     float: left;
     margin: 8px auto 0 14px;
+    cursor: pointer;
 }
 
 .project-example p {
