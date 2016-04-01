@@ -131,7 +131,7 @@ a:active {
     list-style: none;
     right: 0;
     margin-top: 22px;
-    float: left;
+    /*float: left;*/
 }
 
 .navigation li {
@@ -262,7 +262,7 @@ ul.contacts-list {
     display: block;
     content: '';
     height: 35px;
-    width: 51%;
+    width: 53%;
     border-top: 2px solid #C1C5CD;
     border-left: 2px solid #C1C5CD;
     border-right: 2px solid #C1C5CD;
@@ -286,7 +286,7 @@ ul.contacts-list {
     display: block;
     content: '';
     margin-top: -228px;
-    width: 96.5px;
+    width: 94px;
     height: 0px;
     margin-left: -101px;
     border-bottom: 2px solid #C1C5CD;
@@ -605,6 +605,7 @@ a.upbutton i.icon-plus:before {
     left: 0;
 }
 
+/*only for Firefox*/
 @-moz-document url-prefix() {
     a.upbutton i.icon-plus:before {
         content: "\e800";
@@ -625,7 +626,28 @@ a.upbutton i.icon-plus:before {
         top: 18.4px;
         left: -9px;
     }
+
+    .block-2:after {
+        margin-top: -190px;
+    }
+
+    .options {
+        margin-top: -20px;
+    }
 }
+
+/*only for Safari*/
+
+/* Safari only */
+.block:not(:root:root),
+.block-3:not(:root:root) {
+    margin-left: 26px;
+}
+
+.block-2:not(:root:root) {
+    margin-left: 4px;
+}
+
 
 /* Projects-page-forms ============================= */
 
@@ -919,6 +941,7 @@ ul.dropdown-menu.general-dropdown {
     font-size: 160px;
     position: absolute;
     top: 137px;
+    color: #FFFFFF;
 }
 #main-slider i.icon-arrow_left:before {
     content: "\e808";
@@ -1344,13 +1367,16 @@ a.fancybox {
 .best-projects .project-block {
     float: left;
     position: relative;
-    width: 21.7741935%; /*280px;*/
     height: 325px;
-    margin: 1.61290323%; /*20px;*/
     background: #FFFFFF;
     box-shadow: 0px 1px 7px -1px rgba(111, 117, 136, 0.7);
     border-radius: 2px;
     cursor: default;
+}
+
+.project-block {
+    width: 21.7741935%; /*280px;*/
+    margin: 1.61290323%; /*20px;*/
 }
 
 .project-block img {
@@ -1585,7 +1611,7 @@ i.icon-eye:before {
 #schedule ul.navigation {
     max-width: 1280px;
     min-width: 1240px;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     text-align: center;
     position: relative;
 }
@@ -1601,7 +1627,7 @@ i.icon-eye:before {
 
 .plan {
     margin: 0 20px;
-    max-width: 1160px;
+    width: 1160px;
     height: auto;
     overflow: hidden;
     white-space: nowrap;
@@ -3390,7 +3416,7 @@ a.bug-added-sign i.icon-choose:before {
 #carousel-calendar #notification,
 #notification,
 #notification2,
-#notification3 {
+#modal6 #notification {
     width: 254px;
     height: 170px;
     background: #088CFF;
@@ -3405,19 +3431,13 @@ a.bug-added-sign i.icon-choose:before {
     right: 40px;
 }
 
-#notification3 {
-    position: fixed;
-    top: 45%;
-    left: 45%;
-}
-
 #notification .caution-message {
     position: relative;
 }
 
 #notification .caution-message i.icon-caution:before,
 #notification2 .caution-message i.icon-caution:before,
-#notification3 .caution-message i.icon-caution:before {
+#modal6 #notification .caution-message i.icon-caution:before {
     content: "\e80a";
     font-size: 100px;
     color: #FFFFFF;
@@ -3433,7 +3453,11 @@ a.bug-added-sign i.icon-choose:before {
     top: 0;
 }
 
-#notification3 .caution-message i.icon-caution:before {
+#modal6 {
+    top: 20%;
+}
+
+#modal6 #notification .caution-message i.icon-caution:before {
     top: -25px;
     left: 0;
 }
@@ -3441,8 +3465,8 @@ a.bug-added-sign i.icon-choose:before {
 #notification .caution-message p,
 #notification a.caution-sign-in,
 #notification2 .caution-message p,
-#notification3 a.caution-sign-in,
-#notification3 .caution-message p,
+#modal6 #notification a.caution-sign-in,
+#modal6 #notification .caution-message p,
 #notification2 a.caution-sign-in {
     color: #FFFFFF;
     text-align: center;
@@ -3452,24 +3476,24 @@ a.bug-added-sign i.icon-choose:before {
 
 #notification a.caution-sign-in,
 #notification2 a.caution-sign-in,
-#notification3 a.caution-sign-in {
+#modal6 #notification a.caution-sign-in {
     font-weight: 700;
     padding-top: 6px;
 }
 
-#notification3 .caution-message p {
+#modal6 #notification .caution-message p {
     font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
 }
 
 #notification .caution-message p,
-#notification3 .caution-message p {
+#modal6 #notification .caution-message p {
     padding-top: 85px;
     font-weight: 400;
 }
 
-#notification3 .caution-message p {
+#modal6 #notification .caution-message p {
     width: 100%;
 }
 
@@ -3479,7 +3503,7 @@ a.bug-added-sign i.icon-choose:before {
 
 #notification .caution-sign-in,
 #notification2 .caution-sign-in,
-#notification3 .caution-sign-in {
+#modal6 #notification .caution-sign-in {
     width: 144px;
     height: 30px;
     background: inherit;
@@ -3495,13 +3519,15 @@ a.bug-added-sign i.icon-choose:before {
 #notification .caution-sign-in:focus,
 #notification2 .caution-sign-in:hover,
 #notification2 .caution-sign-in:focus,
-#notification3 .caution-sign-in:hover,
-#notification3 .caution-sign-in:focus {
+#modal6 #notification .caution-sign-in:hover,
+#modal6 #notification .caution-sign-in:focus {
     background: #0A74D0;
 }
 
 #modal5 .modal-dialog,
-#modal5 .modal-content {
+#modal5 .modal-content,
+#modal6 .modal-dialog,
+#modal6 .modal-content {
     width: 254px;
     border: none;
 }

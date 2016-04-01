@@ -29,9 +29,9 @@
 
             <!-- Main menu -->
             <ul class="navigation">
-                <li><a href="#" class="lettering">Главная</a></li>
+                <li><a href="home-page.html" class="lettering">Главная</a></li>
                 <li><a href="projects-page.html" class="lettering">Проекты</a></li>
-                <li><a href="Artists page.html" class="lettering">Художники</a></li>
+                <li><a href="Artists-page.html" class="lettering">Художники</a></li>
                 <li class="dropdown contacts-dropdown">
                     <button id="dLabel" class="lettering contacts-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Контакты
@@ -1199,14 +1199,11 @@
 
                         <!-- Tab panes -->
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="august"></div>
-
-                            <div role="tabpanel" class="tab-pane" id="september">
-                                <div id="carousel-calendar" class="carousel slide dates" data-ride="carousel" data-interval="false">
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner dates-carousel" role="listbox">
-                                         <div class="item active">
-                                            <ul class="events-schedule lettering">
+                            <div role="tabpanel" class="tab-pane active" id="august">
+                                <span class="right"><i class="icon-arrow_right"></i></span>
+                                <span class="left"><i class="icon-arrow_left"></i></span>
+                                <div class="plan">
+                                    <ul class="events-schedule lettering">
                                                 <li>1</li>
                                                 <li>2</li>
                                                 <li>3</li>
@@ -1228,7 +1225,7 @@
                                                         <span class="time-details"><img src="PNG/067__clock.png" alt="Часы">10:00 - 14:00</span>
                                                         <p>Раскрашиваем элементы фасада, красим стены 2 и 3-й раз в голубой + красим там, где была штукатурка</p>
                                                         <span><i class="icon-user"></i><strong>12</strong> участников</span>
-                                                        <a href="#" class="go-button lettering">Пойду</a>
+                                                        <a class="go-button">Пойду</a>
                                                     </div> <!-- .future-events-section -->
 
                                                     <div class="future-events-section">
@@ -1236,7 +1233,6 @@
                                                         <span class="time-details"><img src="PNG/067__clock.png" alt="Часы">10:00 - 12:00</span>
                                                         <p>Разметка торцевой стены</p>
                                                         <span><i class="icon-user"></i><strong>9</strong> участников</span>
-                                                        <a href="#" class="go-button lettering">Пойду</a>
                                                         <a href="#" class="i-go-button lettering"><i class="icon-choose"></i>Иду</a>
                                                     </div> <!-- .future-events-section -->
                                                 </li>
@@ -1260,7 +1256,15 @@
                                                         <span class="time-details"><img src="PNG/067__clock.png" alt="Часы">10:00 - 14:00</span>
                                                         <p>Раскрашиваем элементы фасада, красим стены 2 и 3-й раз в голубой + красим там, где была штукатурка</p>
                                                         <span><i class="icon-user"></i><strong>12</strong> участников</span>
-                                                        <a href="#" class="go-button lettering">Пойду</a>
+<a class="go-button" id="go-button">Пойду</a>
+                                                        <div id="notification3" style="display: none;">
+                                                            <div class="caution-message">
+                                                                <i class="icon-caution"></i>
+                                                                <p>Для продолжения нужно</p>
+                                                                <a href="#" class="caution-sign-in">Войти</a>
+                                                            </div> <!-- .caution-message -->
+                                                        </div> <!-- #notification3 -->
+                                                        <div id="background"></div>
                                                     </div> <!-- .future-events-section -->
                                                 </li>
 
@@ -1289,12 +1293,7 @@
                                                         <a href="#" class="go-button lettering">Пойду</a>
                                                     </div> <!-- .future-events-section -->
                                                 </li>
-                                                <li class="final-number">14</li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="item">
-                                            <ul class="events-schedule lettering">
+                                                <li>14</li>
                                                 <li>15</li>
                                                 <li>16</li>
                                                 <li>17</li>
@@ -1329,22 +1328,12 @@
                                                 <li>27</li>
                                                 <li>28</li>
                                                 <li>29</li>
-                                                <li class="final-number">30</li>
+                                                <li>30</li>
                                             </ul>
-                                        </div> <!-- .item -->
-                                    </div> <!-- .carousel-inner -->
+                                </div> <!-- .plan -->
+                            </div> <!-- August -->
 
-                                        <!-- Controls -->
-                                        <a class="left carousel-control" href="#carousel-calendar" role="button" data-slide="prev">
-                                             <span aria-hidden="true"><i class="icon-arrow_left"></i></span>
-                                             <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="right carousel-control" href="#carousel-calendar" role="button" data-slide="next">
-                                            <span aria-hidden="true"><i class="icon-arrow_right"></i></span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                    </div> <!-- .carousel slide: for calendar-tab -->
-                                    </div> <!-- September -->
+                            <div role="tabpanel" class="tab-pane" id="september"></div> <!-- September -->
 
                             <div role="tabpanel" class="tab-pane" id="october"></div>
                     </div> <!-- .tab-content -->
@@ -1365,9 +1354,9 @@
                     </a>
                 </div>
                 <div id="sitemap">
-                    <a href="#">Главная</a>
-                    <a href="#">Проекты</a>
-                    <a href="#">Художники</a>
+                    <a href="home-page.html">Главная</a>
+                    <a href="projects-page.html">Проекты</a>
+                    <a href="Artists-page.html">Художники</a>
                     <a href="#">Контакты</a>
                     <a href="#">Помочь проекту</a>
                 </div>
