@@ -115,7 +115,7 @@ a:active {
     text-transform: uppercase;
     color: #088CFF;
     position: absolute;
-    bottom: -5%;
+    top: 12px;
     left: 9.5%;
     padding-left: 10px;
 }
@@ -758,6 +758,7 @@ ul.dropdown-menu.first-dropdown {
 
 ul.dropdown-menu.general-dropdown {
     min-width: 150px;
+    margin-top: -2px;
 }
 
 .dropdown-menu li a {
@@ -3336,11 +3337,12 @@ textarea#help-address:focus:-moz-placeholder {
     height: 100%;
     cursor: default;
     position: absolute;
+    padding-left: 1px;
 }
 
 .delete-image,
 .add-image {
-    z-index: 1000;
+    /* z-index: 1000; */
     width: 20px;
     height: 20px;
     background-color: #C1C5CD;
