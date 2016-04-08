@@ -1133,7 +1133,7 @@ ul.dropdown-menu.general-dropdown {
   }
 
 .wrapper {
-    width: 71.875%;
+    width: 960px;
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
@@ -1166,12 +1166,11 @@ ul.dropdown-menu.general-dropdown {
     background: inherit;
 }
 
-figure figcaption {
+.photos h2 {
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
     text-align: center;
-    padding-top: 10px;
     color: #949AAB;
 }
 
@@ -1196,7 +1195,7 @@ figure figcaption {
 
 .artist-2 {
     top: 27%;
-    left: 0;
+    left: 20px;
 }
 
 .artist-3 {
@@ -1225,15 +1224,15 @@ figure figcaption {
     left: 45%;
 }
 .artist-9 {
-    bottom: 42%;
-    right: 18%;
+    bottom: 50%;
+    right: 27%;
 }
 .artist-10 {
     bottom: 42%;
     left: 83%;
 }
 
-figure img {
+.photos img {
     border-radius: 50%;
     border: 2px #FFFFFF solid;
     -webkit-box-shadow: 1px 1px 4px 0px rgba(111, 117, 136, 0.51);
